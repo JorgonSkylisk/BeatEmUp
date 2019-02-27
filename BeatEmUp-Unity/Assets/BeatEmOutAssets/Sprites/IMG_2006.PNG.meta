@@ -1,0 +1,2882 @@
+fileFormatVersion: 2
+guid: d01190e35b00f7c4a97b08c9a9465e94
+timeCreated: 1516955360
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: IMG_2006_0
+    21300002: IMG_2006_1
+    21300004: IMG_2006_2
+    21300006: IMG_2006_3
+    21300008: IMG_2006_4
+    21300010: IMG_2006_5
+    21300012: IMG_2006_6
+    21300014: IMG_2006_7
+    21300016: IMG_2006_8
+    21300018: IMG_2006_9
+    21300020: IMG_2006_10
+    21300022: IMG_2006_11
+    21300024: IMG_2006_12
+    21300026: IMG_2006_13
+    21300028: IMG_2006_14
+    21300030: IMG_2006_15
+    21300032: IMG_2006_16
+    21300034: IMG_2006_17
+    21300036: IMG_2006_18
+    21300038: IMG_2006_19
+    21300040: IMG_2006_20
+    21300042: IMG_2006_21
+    21300044: IMG_2006_22
+    21300046: IMG_2006_23
+    21300048: IMG_2006_24
+    21300050: IMG_2006_25
+    21300052: IMG_2006_26
+    21300054: IMG_2006_27
+    21300056: IMG_2006_28
+    21300058: IMG_2006_29
+    21300060: IMG_2006_30
+    21300062: IMG_2006_31
+    21300064: IMG_2006_32
+    21300066: IMG_2006_33
+    21300068: IMG_2006_34
+    21300070: IMG_2006_35
+    21300072: IMG_2006_36
+    21300074: IMG_2006_37
+    21300076: IMG_2006_38
+    21300078: IMG_2006_39
+    21300080: IMG_2006_40
+    21300082: IMG_2006_41
+    21300084: IMG_2006_42
+    21300086: IMG_2006_43
+    21300088: IMG_2006_44
+    21300090: IMG_2006_45
+    21300092: IMG_2006_46
+    21300094: IMG_2006_47
+    21300096: IMG_2006_48
+    21300098: IMG_2006_49
+    21300100: IMG_2006_50
+    21300102: IMG_2006_51
+    21300104: IMG_2006_52
+    21300106: IMG_2006_53
+    21300108: IMG_2006_54
+    21300110: IMG_2006_55
+    21300112: IMG_2006_56
+    21300114: IMG_2006_57
+    21300116: IMG_2006_58
+    21300118: IMG_2006_59
+    21300120: IMG_2006_60
+    21300122: IMG_2006_61
+    21300124: IMG_2006_62
+    21300126: IMG_2006_63
+    21300128: IMG_2006_64
+    21300130: IMG_2006_65
+    21300132: IMG_2006_66
+    21300134: IMG_2006_67
+    21300136: IMG_2006_68
+    21300138: IMG_2006_69
+    21300140: IMG_2006_70
+    21300142: IMG_2006_71
+    21300144: IMG_2006_72
+    21300146: IMG_2006_73
+    21300148: IMG_2006_74
+    21300150: IMG_2006_75
+    21300152: IMG_2006_76
+    21300154: IMG_2006_77
+    21300156: IMG_2006_78
+    21300158: IMG_2006_79
+    21300160: IMG_2006_80
+    21300162: IMG_2006_81
+    21300164: IMG_2006_82
+    21300166: IMG_2006_83
+    21300168: IMG_2006_84
+    21300170: IMG_2006_85
+    21300172: IMG_2006_86
+    21300174: IMG_2006_87
+    21300176: IMG_2006_88
+    21300178: IMG_2006_89
+    21300180: IMG_2006_90
+    21300182: IMG_2006_91
+    21300184: IMG_2006_92
+    21300186: IMG_2006_93
+    21300188: IMG_2006_94
+    21300190: IMG_2006_95
+    21300192: IMG_2006_96
+    21300194: IMG_2006_97
+    21300196: IMG_2006_98
+    21300198: IMG_2006_99
+    21300200: IMG_2006_100
+    21300202: IMG_2006_101
+    21300204: IMG_2006_102
+    21300206: IMG_2006_103
+    21300208: IMG_2006_104
+    21300210: IMG_2006_105
+    21300212: IMG_2006_106
+    21300214: IMG_2006_107
+    21300216: IMG_2006_108
+    21300218: IMG_2006_109
+    21300220: IMG_2006_110
+    21300222: IMG_2006_111
+    21300224: IMG_2006_112
+    21300226: IMG_2006_113
+    21300228: IMG_2006_114
+    21300230: IMG_2006_115
+    21300232: IMG_2006_116
+    21300234: IMG_2006_117
+    21300236: IMG_2006_118
+    21300238: IMG_2006_119
+    21300240: IMG_2006_120
+    21300242: IMG_2006_121
+    21300244: IMG_2006_122
+    21300246: IMG_2006_123
+    21300248: IMG_2006_124
+    21300250: IMG_2006_125
+    21300252: IMG_2006_126
+    21300254: IMG_2006_127
+    21300256: IMG_2006_128
+    21300258: IMG_2006_129
+    21300260: IMG_2006_130
+    21300262: IMG_2006_131
+    21300264: IMG_2006_132
+    21300266: IMG_2006_133
+    21300268: IMG_2006_134
+    21300270: IMG_2006_135
+    21300272: IMG_2006_136
+    21300274: IMG_2006_137
+    21300276: IMG_2006_138
+    21300278: IMG_2006_139
+    21300280: IMG_2006_140
+    21300282: IMG_2006_141
+    21300284: IMG_2006_142
+    21300286: IMG_2006_143
+    21300288: IMG_2006_144
+    21300290: IMG_2006_145
+    21300292: IMG_2006_146
+    21300294: IMG_2006_147
+    21300296: IMG_2006_148
+    21300298: IMG_2006_149
+    21300300: IMG_2006_150
+    21300302: IMG_2006_151
+    21300304: IMG_2006_152
+    21300306: IMG_2006_153
+    21300308: IMG_2006_154
+    21300310: IMG_2006_155
+    21300312: IMG_2006_156
+    21300314: IMG_2006_157
+    21300316: IMG_2006_158
+    21300318: IMG_2006_159
+    21300320: IMG_2006_160
+    21300322: IMG_2006_161
+    21300324: IMG_2006_162
+    21300326: IMG_2006_163
+    21300328: IMG_2006_164
+    21300330: IMG_2006_165
+    21300332: IMG_2006_166
+    21300334: IMG_2006_167
+    21300336: IMG_2006_168
+    21300338: IMG_2006_169
+    21300340: IMG_2006_170
+    21300342: IMG_2006_171
+    21300344: IMG_2006_172
+    21300346: IMG_2006_173
+    21300348: IMG_2006_174
+    21300350: IMG_2006_175
+    21300352: IMG_2006_176
+    21300354: IMG_2006_177
+    21300356: IMG_2006_178
+    21300358: IMG_2006_179
+    21300360: IMG_2006_180
+    21300362: IMG_2006_181
+    21300364: IMG_2006_182
+    21300366: IMG_2006_183
+    21300368: IMG_2006_184
+    21300370: IMG_2006_185
+    21300372: IMG_2006_186
+    21300374: IMG_2006_187
+    21300376: IMG_2006_188
+    21300378: IMG_2006_189
+    21300380: IMG_2006_190
+    21300382: IMG_2006_191
+    21300384: IMG_2006_192
+    21300386: IMG_2006_193
+    21300388: IMG_2006_194
+    21300390: IMG_2006_195
+    21300392: IMG_2006_196
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: 10
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IMG_2006_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1144
+        width: 55
+        height: 75
+      alignment: 9
+      pivot: {x: 0.40877137, y: 0.44107255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1144
+        width: 58
+        height: 80
+      alignment: 9
+      pivot: {x: 0.374329, y: 0.41488037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1143
+        width: 57
+        height: 82
+      alignment: 9
+      pivot: {x: 0.36349785, y: 0.43873703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1143
+        width: 58
+        height: 83
+      alignment: 9
+      pivot: {x: 0.3340012, y: 0.42434436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1143
+        width: 40
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1148
+        width: 39
+        height: 85
+      alignment: 9
+      pivot: {x: 0.52156574, y: 0.3812658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1149
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1143
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_8
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1142
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_9
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1135
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1021
+        width: 30
+        height: 81
+      alignment: 9
+      pivot: {x: 0.4999991, y: 0.3964708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1021
+        width: 29
+        height: 80
+      alignment: 9
+      pivot: {x: 0.4678692, y: 0.3835297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1021
+        width: 46
+        height: 79
+      alignment: 9
+      pivot: {x: 0.52025473, y: 0.3702609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1021
+        width: 28
+        height: 81
+      alignment: 9
+      pivot: {x: 0.49999836, y: 0.3619611}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_14
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1021
+        width: 45
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5414107, y: 0.39384985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_15
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1021
+        width: 38
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5260829, y: 0.45926863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_16
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1021
+        width: 66
+        height: 75
+      alignment: 9
+      pivot: {x: 0.53003484, y: 0.4603548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_17
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1021
+        width: 68
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47321215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_18
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1021
+        width: 40
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.431171}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1021
+        width: 67
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5147933, y: 0.44713867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_20
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1021
+        width: 68
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5000009, y: 0.45981908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_21
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 913
+        width: 62
+        height: 78
+      alignment: 9
+      pivot: {x: 0.43019363, y: 0.4263423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 916
+        width: 70
+        height: 75
+      alignment: 9
+      pivot: {x: 0.3555859, y: 0.41224283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_23
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 915
+        width: 41
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 915
+        width: 42
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5000007, y: 0.4115528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_25
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 915
+        width: 80
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_26
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 915
+        width: 78
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 799
+        width: 37
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 799
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_29
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 799
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_30
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 799
+        width: 53
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_31
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 808
+        width: 43
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_32
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 809
+        width: 52
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_33
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 816
+        width: 49
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_34
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 826
+        width: 78
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_35
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 826
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 701
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_37
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 701
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_38
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 749
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_39
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 701
+        width: 56
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_40
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 701
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_41
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 701
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_42
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 701
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_43
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 701
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5000007, y: 0.5978475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_44
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 584
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_45
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 584
+        width: 53
+        height: 83
+      alignment: 9
+      pivot: {x: 0.4779836, y: 0.42970735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_46
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 584
+        width: 47
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_47
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 592
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_48
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 596
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_49
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 584
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_50
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 584
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 452
+        width: 51
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_52
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 452
+        width: 51
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_53
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 534
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_54
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 452
+        width: 51
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_55
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 452
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_56
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 452
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_57
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 452
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_58
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 452
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_59
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 462
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_60
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 324
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_61
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 324
+        width: 87
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_62
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 324
+        width: 72
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5223228, y: 0.3897002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_63
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 324
+        width: 66
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5183295, y: 0.37902567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_64
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 324
+        width: 91
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5265872, y: 0.65939116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_65
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 324
+        width: 96
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6941363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_66
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 324
+        width: 81
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5253492, y: 0.7019628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_67
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 358
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_68
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 324
+        width: 80
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5453644, y: 0.5793257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_69
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_70
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 345
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_71
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 174
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_72
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 174
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_73
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 174
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_74
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 174
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_75
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 174
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_76
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 174
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_77
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 174
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_78
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 174
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_79
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 174
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_80
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 179
+        width: 38
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_81
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 44
+        width: 49
+        height: 77
+      alignment: 9
+      pivot: {x: 0.48283628, y: 0.4016972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_82
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 55
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_83
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 44
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_84
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 96
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_85
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 44
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.51274294, y: 0.6957489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_86
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_87
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_88
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_89
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_90
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_91
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_92
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_93
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_94
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_95
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_96
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_97
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_98
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 73
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_99
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 76
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_100
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_101
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_102
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_103
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_104
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_105
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_106
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_107
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_108
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_109
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_110
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_111
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_112
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_113
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_114
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 76
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_115
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_116
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_117
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_118
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_119
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_120
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_121
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_122
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_123
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_124
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_125
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_126
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_127
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 73
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_128
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 73
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_129
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 44
+        width: 86
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_130
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_131
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 56
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_132
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_133
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_134
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_135
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_136
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_137
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_138
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_139
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_140
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 56
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_141
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_142
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_143
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_144
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_145
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_146
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_147
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_148
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_149
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_150
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_151
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_152
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_153
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_154
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_155
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_156
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_157
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 39
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_158
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 39
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_159
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_160
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_161
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_162
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 39
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_163
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_164
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_165
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_166
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_167
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_168
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_169
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_170
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 39
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_171
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 39
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_172
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 39
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_173
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 39
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_174
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_175
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_176
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_177
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_178
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_179
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_180
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_181
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_182
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_183
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_184
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_185
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 22
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_186
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_187
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 22
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_188
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_189
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_190
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_191
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_192
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_193
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_194
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_195
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: IMG_2006_196
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 22
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

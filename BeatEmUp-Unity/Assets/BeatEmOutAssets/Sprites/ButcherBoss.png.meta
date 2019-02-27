@@ -1,0 +1,1290 @@
+fileFormatVersion: 2
+guid: a9c67fbc8646bca4a9e06f7a2b0d0100
+timeCreated: 1509179611
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherBoss_0
+    21300002: ButcherBoss_1
+    21300004: ButcherBoss_2
+    21300006: ButcherBoss_3
+    21300008: ButcherBoss_4
+    21300010: ButcherBoss_5
+    21300012: ButcherBoss_6
+    21300014: ButcherBoss_7
+    21300016: ButcherBoss_8
+    21300018: ButcherBoss_9
+    21300020: ButcherBoss_10
+    21300022: ButcherBoss_11
+    21300024: ButcherBoss_12
+    21300026: ButcherBoss_13
+    21300028: ButcherBoss_14
+    21300030: ButcherBoss_15
+    21300032: ButcherBoss_16
+    21300034: ButcherBoss_17
+    21300036: ButcherBoss_18
+    21300038: ButcherBoss_19
+    21300040: ButcherBoss_20
+    21300042: ButcherBoss_21
+    21300044: ButcherBoss_22
+    21300046: ButcherBoss_23
+    21300048: ButcherBoss_24
+    21300050: ButcherBoss_25
+    21300052: ButcherBoss_26
+    21300054: ButcherBoss_27
+    21300056: ButcherBoss_28
+    21300058: ButcherBoss_29
+    21300060: ButcherBoss_30
+    21300062: ButcherBoss_31
+    21300064: ButcherBoss_32
+    21300066: ButcherBoss_33
+    21300068: ButcherBoss_34
+    21300070: ButcherBoss_35
+    21300072: ButcherBoss_36
+    21300074: ButcherBoss_37
+    21300076: ButcherBoss_38
+    21300078: ButcherBoss_39
+    21300080: ButcherBoss_40
+    21300082: ButcherBoss_41
+    21300084: ButcherBoss_42
+    21300086: ButcherBoss_43
+    21300088: ButcherBoss_44
+    21300090: ButcherBoss_45
+    21300092: ButcherBoss_46
+    21300094: ButcherBoss_47
+    21300096: ButcherBoss_48
+    21300098: ButcherBoss_49
+    21300100: ButcherBoss_50
+    21300102: ButcherBoss_51
+    21300104: ButcherBoss_52
+    21300106: ButcherBoss_53
+    21300108: ButcherBoss_54
+    21300110: ButcherBoss_55
+    21300112: ButcherBoss_56
+    21300114: ButcherBoss_57
+    21300116: ButcherBoss_58
+    21300118: ButcherBoss_59
+    21300120: ButcherBoss_60
+    21300122: ButcherBoss_61
+    21300124: ButcherBoss_62
+    21300126: ButcherBoss_63
+    21300128: ButcherBoss_64
+    21300130: ButcherBoss_65
+    21300132: ButcherBoss_66
+    21300134: ButcherBoss_67
+    21300136: ButcherBoss_68
+    21300138: ButcherBoss_69
+    21300140: ButcherBoss_70
+    21300142: ButcherBoss_71
+    21300144: ButcherBoss_72
+    21300146: ButcherBoss_73
+    21300148: ButcherBoss_74
+    21300150: ButcherBoss_75
+    21300152: ButcherBoss_76
+    21300154: ButcherBoss_77
+    21300156: ButcherBoss_78
+    21300158: ButcherBoss_79
+    21300160: ButcherBoss_80
+    21300162: ButcherBoss_81
+    21300164: ButcherBoss_82
+    21300166: ButcherBoss_83
+    21300168: ButcherBoss_84
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: 10
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherBoss_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 489
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 489
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 489
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 530
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_4
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 538
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_5
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 538
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_6
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 538
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 538
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_8
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 538
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 538
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 509
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_11
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 509
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 378
+        width: 101
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 378
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_14
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 378
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_15
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 378
+        width: 98
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_16
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 378
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_17
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 378
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 379
+        width: 100
+        height: 89
+      alignment: 9
+      pivot: {x: 0.52571046, y: 0.4711112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_19
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 415
+        width: 97
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_20
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 429
+        width: 106
+        height: 100
+      alignment: 9
+      pivot: {x: 0.54851025, y: 0.24289398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_21
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 386
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_22
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 289
+        width: 138
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_23
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 266
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 265
+        width: 195
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_25
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 266
+        width: 103
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 266
+        width: 190
+        height: 82
+      alignment: 9
+      pivot: {x: 0.29702133, y: 0.57315993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_27
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 341
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_28
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 341
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_29
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 341
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_30
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 341
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_31
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 341
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_32
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 341
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_33
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 341
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_34
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 341
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_35
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_36
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_37
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_38
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_39
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 325
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_40
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_41
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_42
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 325
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_43
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 325
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_44
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 325
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_45
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 131
+        width: 152
+        height: 127
+      alignment: 9
+      pivot: {x: 0.3872343, y: 0.35828823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_46
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 131
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_47
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 131
+        width: 160
+        height: 121
+      alignment: 9
+      pivot: {x: 0.28574485, y: 0.3725093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_48
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 131
+        width: 139
+        height: 128
+      alignment: 9
+      pivot: {x: 0.6726373, y: 0.35939515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_49
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 131
+        width: 104
+        height: 106
+      alignment: 9
+      pivot: {x: 0.5329625, y: 0.39489344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_50
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 131
+        width: 161
+        height: 132
+      alignment: 9
+      pivot: {x: 0.35095328, y: 0.33119306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_51
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 10
+        width: 100
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_52
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 95
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_53
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 92
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_54
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 92
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_55
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_56
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 95
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_57
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 95
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_58
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 92
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_59
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 95
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_60
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 95
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_61
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 95
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_62
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_63
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_64
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_65
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 95
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_66
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_67
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_68
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 17
+        width: 116
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_69
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 18
+        width: 123
+        height: 68
+      alignment: 9
+      pivot: {x: 0.18612422, y: 0.39677337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_70
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 79
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_71
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 79
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_72
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_73
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_74
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 79
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_75
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_76
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 79
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_77
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 79
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_78
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 79
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_79
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_80
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_81
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_82
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 79
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_83
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 79
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButcherBoss_84
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 14
+        width: 200
+        height: 44
+      alignment: 9
+      pivot: {x: 0.60090363, y: 0.51994133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,870 @@
+fileFormatVersion: 2
+guid: 9d39f581c250ac8469411b1c74683e27
+timeCreated: 1503457461
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Electra-Streets-of-Rage-2-Sprites_0
+    21300002: Electra-Streets-of-Rage-2-Sprites_1
+    21300004: Electra-Streets-of-Rage-2-Sprites_2
+    21300006: Electra-Streets-of-Rage-2-Sprites_3
+    21300008: Electra-Streets-of-Rage-2-Sprites_4
+    21300010: Electra-Streets-of-Rage-2-Sprites_5
+    21300012: Electra-Streets-of-Rage-2-Sprites_6
+    21300014: Electra-Streets-of-Rage-2-Sprites_7
+    21300016: Electra-Streets-of-Rage-2-Sprites_8
+    21300018: Electra-Streets-of-Rage-2-Sprites_9
+    21300020: Electra-Streets-of-Rage-2-Sprites_10
+    21300022: Electra-Streets-of-Rage-2-Sprites_11
+    21300024: Electra-Streets-of-Rage-2-Sprites_12
+    21300026: Electra-Streets-of-Rage-2-Sprites_13
+    21300028: Electra-Streets-of-Rage-2-Sprites_14
+    21300030: Electra-Streets-of-Rage-2-Sprites_15
+    21300032: Electra-Streets-of-Rage-2-Sprites_16
+    21300034: Electra-Streets-of-Rage-2-Sprites_17
+    21300036: Electra-Streets-of-Rage-2-Sprites_18
+    21300038: Electra-Streets-of-Rage-2-Sprites_19
+    21300040: Electra-Streets-of-Rage-2-Sprites_20
+    21300042: Electra-Streets-of-Rage-2-Sprites_21
+    21300044: Electra-Streets-of-Rage-2-Sprites_22
+    21300046: Electra-Streets-of-Rage-2-Sprites_23
+    21300048: Electra-Streets-of-Rage-2-Sprites_24
+    21300050: Electra-Streets-of-Rage-2-Sprites_25
+    21300052: Electra-Streets-of-Rage-2-Sprites_26
+    21300054: Electra-Streets-of-Rage-2-Sprites_27
+    21300056: Electra-Streets-of-Rage-2-Sprites_28
+    21300058: Electra-Streets-of-Rage-2-Sprites_29
+    21300060: Electra-Streets-of-Rage-2-Sprites_30
+    21300062: Electra-Streets-of-Rage-2-Sprites_31
+    21300064: Electra-Streets-of-Rage-2-Sprites_32
+    21300066: Electra-Streets-of-Rage-2-Sprites_33
+    21300068: Electra-Streets-of-Rage-2-Sprites_34
+    21300070: Electra-Streets-of-Rage-2-Sprites_35
+    21300072: Electra-Streets-of-Rage-2-Sprites_36
+    21300074: Electra-Streets-of-Rage-2-Sprites_37
+    21300076: Electra-Streets-of-Rage-2-Sprites_38
+    21300078: Electra-Streets-of-Rage-2-Sprites_39
+    21300080: Electra-Streets-of-Rage-2-Sprites_40
+    21300082: Electra-Streets-of-Rage-2-Sprites_41
+    21300084: Electra-Streets-of-Rage-2-Sprites_42
+    21300086: Electra-Streets-of-Rage-2-Sprites_43
+    21300088: Electra-Streets-of-Rage-2-Sprites_44
+    21300090: Electra-Streets-of-Rage-2-Sprites_45
+    21300092: Electra-Streets-of-Rage-2-Sprites_46
+    21300094: Electra-Streets-of-Rage-2-Sprites_47
+    21300096: Electra-Streets-of-Rage-2-Sprites_48
+    21300098: Electra-Streets-of-Rage-2-Sprites_49
+    21300100: Electra-Streets-of-Rage-2-Sprites_50
+    21300102: Electra-Streets-of-Rage-2-Sprites_51
+    21300104: Electra-Streets-of-Rage-2-Sprites_52
+    21300106: Electra-Streets-of-Rage-2-Sprites_53
+    21300108: Electra-Streets-of-Rage-2-Sprites_54
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: 10
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 336
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 336
+        width: 41
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 336
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 336
+        width: 36
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 336
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 336
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 336
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 336
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 336
+        width: 95
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 336
+        width: 83
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 336
+        width: 65
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 216
+        width: 30
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 216
+        width: 30
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 216
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 216
+        width: 48
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 297
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 216
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 216
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 216
+        width: 48
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 216
+        width: 48
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 216
+        width: 48
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 260
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 259
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 216
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 216
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 216
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 216
+        width: 41
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 233
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 96
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 96
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 96
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 96
+        width: 46
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 163
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 96
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 110
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 97
+        width: 127
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 120
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 96
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_39
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 12
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 12
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_41
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 12
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_42
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 12
+        width: 77
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_43
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 12
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_44
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 42
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_45
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 43
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_46
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 46
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_47
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 47
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_48
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 50
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_49
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 50
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_50
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 12
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_51
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 12
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_52
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 12
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_53
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 12
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Electra-Streets-of-Rage-2-Sprites_54
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 12
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
