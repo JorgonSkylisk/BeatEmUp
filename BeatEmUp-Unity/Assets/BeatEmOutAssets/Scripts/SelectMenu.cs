@@ -37,16 +37,16 @@ public class SelectMenu : MonoBehaviour
 		if (characterIndex == 1)
 		{
 			adamImage.color = Color.yellow;
-			adamAnim.SetBool ("Attack", true);
+
 			axelImage.color = defaultColor;
-			axelAnim.SetBool ("Attack", false);
+
 		}
 		else if(characterIndex == 2)
 		{
 			axelImage.color = Color.yellow;
-			axelAnim.SetBool ("Attack", true);
+
 			adamImage.color = defaultColor;
-			adamAnim.SetBool ("Attack", false);
+
 		}
 
 		if(Input.GetKeyDown(KeyCode.Return))

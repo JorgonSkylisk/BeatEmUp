@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 	//public EasyJoystick joystick;
 
 	public float maxSpeed = 4;
-	public float jumpForce = 400;
+	public float jumpForce = 1000;
 	public float minHeight, maxHeight;
 	public int maxHealth = 10;
 	public string playerName;
