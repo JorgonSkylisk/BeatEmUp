@@ -231,7 +231,7 @@ public class Enemy : MonoBehaviour
 
 			PlaySong (collisionSound);
 			UIManager.instance.UpdateEnemyUI(maxHealth,currentHealth,enemyName,enemyImage);
-			if(currentHealth <= 0 && damageCount>=4 || target.GetComponent<Player>().holdingWeapon&&currentHealth<=0)
+			if(currentHealth <= 0 || target.GetComponent<Player>().holdingWeapon&&currentHealth<=0)
 			{
 				isDead = true;
 				rb.AddRelativeForce(new Vector3(4.5f,3.5f,0),ForceMode.Impulse);//自身坐标的力
