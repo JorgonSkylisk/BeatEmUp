@@ -33,6 +33,8 @@ public class Player : MonoBehaviour
 	public bool highDamage;
 	public bool canAttack = true;
     public static float unscaledDeltaTime = 1.0f;
+    private float animNormalSpeed = 1f;
+    private float animSlowSpeed = 5f;
 
 
     void Start () 
@@ -43,8 +45,8 @@ public class Player : MonoBehaviour
 		currentSpeed = maxSpeed;
 		currentHealth = maxHealth;
 		audioS = GetComponent<AudioSource>();
-		//joystick = GameObject.FindObjectOfType<EasyJoystick>();
-		//EasyButton.On_ButtonDown += HandleOn_ButtonDown;
+        //joystick = GameObject.FindObjectOfType<EasyJoystick>();
+        //EasyButton.On_ButtonDown += HandleOn_ButtonDown;
 	}
 	
 	//void OnEnable()
@@ -84,11 +86,16 @@ public class Player : MonoBehaviour
             if (Time.timeScale == 1.0f)
             {
                 Time.timeScale = 0.2f;
-
+                anim.speed = animSlowSpeed;
+                currentSpeed = currentSpeed * 5f;
             }
             else
+            {
                 Time.timeScale = 1.0f;
-            // Adjust fixed delta time according to timescale
+                anim.speed = animNormalSpeed;
+                currentSpeed = maxSpeed;
+            }
+                // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
@@ -134,19 +141,8 @@ public class Player : MonoBehaviour
 			FindObjectOfType<Weapon>().gameObject.GetComponent<SpriteRenderer>().sprite = null;
 		}
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            if (Time.timeScale == 1.0f)
-            {
-                Time.timeScale = 0.00001f;
-
-            }
-            else
-                Time.timeScale = 1.0f;
-            // Adjust fixed delta time according to timescale
-            // The fixed delta time will now be 0.02 frames per real-time second
-            Time.fixedDeltaTime = Time.fixedUnscaledDeltaTime;
-        }
+        
+   
 
         if (highDamage) 
 		{
