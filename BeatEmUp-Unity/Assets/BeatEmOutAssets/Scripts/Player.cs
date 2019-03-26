@@ -33,6 +33,9 @@ public class Player : MonoBehaviour
 	public bool highDamage;
 	public bool canAttack = true;
     public static float unscaledDeltaTime = 1.0f;
+    private float animNormalSpeed = 1f;
+    private float animSlowSpeed = 5f;
+    private float animStopSpeed = 50f;
 
 
     void Start () 
@@ -74,7 +77,7 @@ public class Player : MonoBehaviour
 		anim.SetBool ("Dead", isDead);
 		anim.SetBool ("Weapon",holdingWeapon);
 
-		if (Input.GetButtonDown("Jump"))//地面攻击不能跳
+		if (Input.GetButtonDown("Jump"))
 		{
 			Jump ();
 		}
@@ -84,17 +87,41 @@ public class Player : MonoBehaviour
             if (Time.timeScale == 1.0f)
             {
                 Time.timeScale = 0.2f;
-
+                anim.speed = animSlowSpeed;
+                currentSpeed = currentSpeed * 5;
+                jumpForce = jumpForce * 5;
             }
             else
+            {
                 Time.timeScale = 1.0f;
-            // Adjust fixed delta time according to timescale
+                anim.speed = animNormalSpeed;
+                currentSpeed = maxSpeed;
+                jumpForce = 500;
+            }
+                // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
         }
 
-
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (Time.timeScale == 1.0f)
+            {
+                Time.timeScale = 0.02f;
+                anim.speed = animStopSpeed;
+                currentSpeed = currentSpeed * 500;
+            }
+            else
+            {
+                Time.timeScale = 1.0f;
+                anim.speed = animNormalSpeed;
+                currentSpeed = maxSpeed;
+            }
+                // Adjust fixed delta time according to timescale
+            // The fixed delta time will now be 0.02 frames per real-time second
+            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        }
 
         if (!holdingWeapon) 
 		{
@@ -134,19 +161,7 @@ public class Player : MonoBehaviour
 			FindObjectOfType<Weapon>().gameObject.GetComponent<SpriteRenderer>().sprite = null;
 		}
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            if (Time.timeScale == 1.0f)
-            {
-                Time.timeScale = 0.00001f;
 
-            }
-            else
-                Time.timeScale = 1.0f;
-            // Adjust fixed delta time according to timescale
-            // The fixed delta time will now be 0.02 frames per real-time second
-            Time.fixedDeltaTime = Time.fixedUnscaledDeltaTime;
-        }
 
         if (highDamage) 
 		{
@@ -419,16 +434,16 @@ public class Player : MonoBehaviour
 		holdingWeapon = false;
 	}	
 
-	public void TimeScale()
+	/*public void TimeScale()
 	{
 		Time.timeScale = 0.4f;
 		Time.fixedDeltaTime = 0.04f * Time.timeScale;
 	}
 
-	public void ResteTimeScale()
+	/*public void ResteTimeScale()
 	{
 		Time.timeScale = 1f;
-	}
+	}*/
 
 	public void SetCombo()
 	{

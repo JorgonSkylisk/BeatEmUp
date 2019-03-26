@@ -219,7 +219,7 @@ public class Enemy : MonoBehaviour
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack"))
 			{
-				Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+				//Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
 				rb.AddRelativeForce (new Vector3(-7,3,0),ForceMode.Impulse);
 				damageCount += 4;
 			}
