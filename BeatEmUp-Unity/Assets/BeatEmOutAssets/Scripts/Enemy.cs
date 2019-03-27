@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
 	public bool highDamage;
 	public bool beHold = false;
 
-	public virtual void Start () //子类中如果存在相同的函数名，基类必须为虚拟方法，在子类中override复写出来。
+	public virtual void Start () 
 	{
 		currentSpeed = maxSpeed;
 		rb = GetComponent<Rigidbody> ();

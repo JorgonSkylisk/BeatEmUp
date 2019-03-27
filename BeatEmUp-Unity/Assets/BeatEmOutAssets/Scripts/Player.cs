@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
                 currentSpeed = currentSpeed * 5;
                 jumpForce = jumpForce * 5;
                 currentSuper -= 10;
-                
+                StartCoroutine(wait_slowTime());
             }
             else
             {
@@ -112,11 +112,16 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            if (Time.timeScale == 1.0f)
+            if (Time.timeScale == 1.0f && currentSuper > 30)
             {
+                
+                
                 Time.timeScale = 0.02f;
                 anim.speed = animStopSpeed;
-                currentSpeed = currentSpeed * 500;
+                currentSpeed = currentSpeed * 50;
+                currentSuper -= 30;
+                StartCoroutine(wait_stopTime());
+
             }
             else
             {
@@ -127,6 +132,7 @@ public class Player : MonoBehaviour
                 // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
+            UIManager.instance.UpdateSuper(currentSuper);
         }
 
         if (!holdingWeapon) 
@@ -153,7 +159,25 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	float h;
+    IEnumerator wait_slowTime()
+    {
+        yield return new WaitForSecondsRealtime (5);
+        Time.timeScale = 1.0f;
+        anim.speed = animNormalSpeed;
+        currentSpeed = maxSpeed;
+        jumpForce = 500;
+    }
+
+    IEnumerator wait_stopTime()
+    {
+        yield return new WaitForSecondsRealtime(3);
+        Time.timeScale = 1.0f;
+        anim.speed = animNormalSpeed;
+        currentSpeed = maxSpeed;
+        jumpForce = 500;
+    }
+
+    float h;
 	float z;
 	private void FixedUpdate()
 	{
@@ -197,7 +221,15 @@ public class Player : MonoBehaviour
 				z = CrossPlatformInputManager.GetAxis ("Vertical");
 			}
 
-			if(anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2"))
+            float speed = 3;
+
+            float dh = h * speed * Time.deltaTime;
+
+            Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
+            gameObject.GetComponent<CharacterController>().Move(transform.TransformDirection(input * speed * Time.deltaTime));
+
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2"))
 			{
 				rb.velocity = Vector3.zero;
 			}
@@ -206,12 +238,13 @@ public class Player : MonoBehaviour
 			{
 				z=0;
 			}
-			if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage")&&!highDamage&&onGround)
-			{
-				rb.velocity = new Vector3(h*currentSpeed, rb.velocity.y, z*currentSpeed);
-			}
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage") && !highDamage && onGround)
+            {
+                //rb.velocity = new Vector3(h * currentSpeed, rb.velocity.y, z * currentSpeed);
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+            }
 
-			if(onGround)
+            if (onGround)
 			{
 				anim.SetFloat ("Speed",Mathf.Abs (rb.velocity.magnitude));
 			}
