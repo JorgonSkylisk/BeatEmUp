@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 	public float jumpForce = 1000;
 	public float minHeight, maxHeight;
 	public int maxHealth = 10;
+    public int maxSuper = 100;
 	public string playerName;
 	public Sprite playerImage;
 	public AudioClip collisionSound,jumpSound,healthItem,deadSound;
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
 
 	private int currentHealth;
 	private float currentSpeed;
+    private int currentSuper;
 	private Rigidbody rb;
 	private Animator anim;
 	private Transform groundCheck;
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
 		groundCheck = gameObject.transform.Find ("GroundCheck");
 		currentSpeed = maxSpeed;
 		currentHealth = maxHealth;
+        currentSuper = maxSuper;
 		audioS = GetComponent<AudioSource>();
 		//joystick = GameObject.FindObjectOfType<EasyJoystick>();
 		//EasyButton.On_ButtonDown += HandleOn_ButtonDown;
@@ -84,12 +87,14 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            if (Time.timeScale == 1.0f)
+            if (Time.timeScale == 1.0f && currentSuper > 0)
             {
                 Time.timeScale = 0.2f;
                 anim.speed = animSlowSpeed;
                 currentSpeed = currentSpeed * 5;
                 jumpForce = jumpForce * 5;
+                currentSuper -= 10;
+                
             }
             else
             {
@@ -97,11 +102,12 @@ public class Player : MonoBehaviour
                 anim.speed = animNormalSpeed;
                 currentSpeed = maxSpeed;
                 jumpForce = 500;
+                
             }
                 // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
-
+            UIManager.instance.UpdateSuper(currentSuper);
         }
 
         if (Input.GetKeyDown(KeyCode.L))

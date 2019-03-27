@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour {
 
 	public static UIManager instance{get; set;}
 	public Slider healthUI;
+    public Slider superUI;
 	public Image playerImage;
 	public Text playerName;
 	public Text livesText;
@@ -33,6 +34,8 @@ public class UIManager : MonoBehaviour {
 		player = FindObjectOfType<Player> ();
 		healthUI.maxValue = player.maxHealth;
 		healthUI.value = healthUI.maxValue;
+        superUI.maxValue = player.maxSuper;
+        superUI.value = superUI.maxValue;
 		playerName.text = player.playerName;
 		playerImage.sprite = player.playerImage;
 		UpdateLives ();
@@ -52,10 +55,14 @@ public class UIManager : MonoBehaviour {
 	public void UpdateHealth(int amount)
 	{
 		healthUI.value = amount;
-
 	}
 
-	public void UpdateEnemyUI(int maxHealth, int currentHealth,string name,Sprite image)
+    public void UpdateSuper(int amount)
+    {
+        superUI.value = amount;
+    }
+
+    public void UpdateEnemyUI(int maxHealth, int currentHealth,string name,Sprite image)
 	{
 		enemySlider.maxValue = maxHealth;
 		enemySlider.value = currentHealth;
