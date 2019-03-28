@@ -3750,16 +3750,16 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1904909983}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb8de4fedc35f4d2b9d705babe6b9272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distortionStrength: 0.023
-  fisheyeStrength: 0.448
-  stripesStrength: 0
-  noiseStrength: 0.001
-  vignetteStrength: 0.157
+  distortionStrength: 0.012
+  fisheyeStrength: 0.579
+  stripesStrength: 0.049
+  noiseStrength: 0.151
+  vignetteStrength: 0.473
   VHSScanlines: 1
   Noise: {fileID: 2800000, guid: 89d38d9e1c1834e838994f4cb77f912c, type: 3}
   tvDistortionShader: {fileID: 4800000, guid: 63ef093375cfb45e3bff8874aae4b392, type: 3}

@@ -8,8 +8,8 @@ public class Player : MonoBehaviour
 {
 	//public EasyJoystick joystick;
 
-	public float maxSpeed = 4;
-	public float jumpForce = 1000;
+	public float maxSpeed = 6;
+	public float jumpForce = 500;
 	public float minHeight, maxHeight;
 	public int maxHealth = 10;
     public int maxSuper = 100;
@@ -38,7 +38,13 @@ public class Player : MonoBehaviour
     private float animNormalSpeed = 1f;
     private float animSlowSpeed = 5f;
     private float animStopSpeed = 50f;
+    private float maxNormalSpeed = 6;
+    private float SlowMultiplier;
 
+    //Movement Variables
+    private float xSpeed =2;                                //float to give you a x axis speed
+    private float ySpeed =2;                                //as above with y
+    private float zSpeed =2;                                //as above with z
 
     void Start () 
 	{
@@ -49,9 +55,10 @@ public class Player : MonoBehaviour
 		currentHealth = maxHealth;
         currentSuper = maxSuper;
 		audioS = GetComponent<AudioSource>();
-		//joystick = GameObject.FindObjectOfType<EasyJoystick>();
-		//EasyButton.On_ButtonDown += HandleOn_ButtonDown;
-	}
+        SlowMultiplier = (float)(Time.deltaTime * (1 + (1.0 - Time.timeScale)));
+        //joystick = GameObject.FindObjectOfType<EasyJoystick>();
+        //EasyButton.On_ButtonDown += HandleOn_ButtonDown;
+    }
 	
 	//void OnEnable()
 	//{
@@ -87,20 +94,23 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            if (Time.timeScale == 1.0f && currentSuper > 0)
+            if (Time.timeScale == 1.0f && currentSuper != 0)
             {
                 Time.timeScale = 0.2f;
                 anim.speed = animSlowSpeed;
-                currentSpeed = currentSpeed * 5;
+                maxSpeed = maxNormalSpeed * 5;
+                //xSpeed = xSpeed * 5;
                 jumpForce = jumpForce * 5;
                 currentSuper -= 10;
                 StartCoroutine(wait_slowTime());
+
             }
             else
             {
                 Time.timeScale = 1.0f;
                 anim.speed = animNormalSpeed;
-                currentSpeed = maxSpeed;
+                maxNormalSpeed = 6;
+                //xSpeed = 2;
                 jumpForce = 500;
                 
             }
@@ -118,22 +128,23 @@ public class Player : MonoBehaviour
                 
                 Time.timeScale = 0.02f;
                 anim.speed = animStopSpeed;
-                currentSpeed = currentSpeed * 50;
+                maxSpeed = maxNormalSpeed * 50;
                 currentSuper -= 30;
                 StartCoroutine(wait_stopTime());
-
             }
             else
             {
                 Time.timeScale = 1.0f;
                 anim.speed = animNormalSpeed;
                 currentSpeed = maxSpeed;
+
             }
                 // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
             UIManager.instance.UpdateSuper(currentSuper);
         }
+
 
         if (!holdingWeapon) 
 		{
@@ -164,7 +175,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSecondsRealtime (5);
         Time.timeScale = 1.0f;
         anim.speed = animNormalSpeed;
-        currentSpeed = maxSpeed;
+        maxSpeed = maxNormalSpeed;
         jumpForce = 500;
     }
 
@@ -173,7 +184,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
         Time.timeScale = 1.0f;
         anim.speed = animNormalSpeed;
-        currentSpeed = maxSpeed;
+        maxSpeed = maxNormalSpeed;
         jumpForce = 500;
     }
 
@@ -210,25 +221,37 @@ public class Player : MonoBehaviour
 
 		if (!isDead) 
 		{
-			//float h = Input.GetAxis ("Horizontal");
-			//float z = Input.GetAxis ("Vertical");
-			//float h = joystick.JoystickAxis.x;
-			//float z = joystick.JoystickAxis.y;
-			if(!highDamage&&onGround&&
-			   !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
-			{
-				h = CrossPlatformInputManager.GetAxis ("Horizontal");
-				z = CrossPlatformInputManager.GetAxis ("Vertical");
-			}
+            //float h = Input.GetAxis ("Horizontal");
+            //float z = Input.GetAxis ("Vertical");
+            //float h = joystick.JoystickAxis.x;
+            //float z = joystick.JoystickAxis.y;
+              if(!highDamage&&onGround&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+              {
+                  h = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
+                  z = CrossPlatformInputManager.GetAxisRaw ("Vertical");
+              }
 
-            float speed = 3;
+             /*float speed = 3;
 
-            float dh = h * speed * Time.deltaTime;
+              float dh = h * speed * Time.deltaTime;
 
-            Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+              Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
-            gameObject.GetComponent<CharacterController>().Move(transform.TransformDirection(input * speed * Time.deltaTime));
+              gameObject.GetComponent<CharacterController>().Move(transform.TransformDirection(input * speed * Time.deltaTime));
 
+
+   */
+
+
+                                                         //... Free the speed from framerate's tiranny...
+ /*           hMove *= Time.fixedUnscaledDeltaTime;                    //this shifts the movement's pace to real seconds
+            vMove *= Time.unscaledDeltaTime;                    //as above
+            zMove *= Time.unscaledDeltaTime;                    //as above
+
+        
+            //This line tells the game what to do with the lines above, that is to Move.
+            transform.Translate(hMove, 0.0f, zMove, Space.World);
+   */ 
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2"))
 			{
 				rb.velocity = Vector3.zero;
@@ -240,13 +263,13 @@ public class Player : MonoBehaviour
 			}
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage") && !highDamage && onGround)
             {
-                //rb.velocity = new Vector3(h * currentSpeed, rb.velocity.y, z * currentSpeed);
-                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+               rb.velocity = new Vector3(h * maxSpeed, rb.velocity.y, z * maxSpeed);
+               rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
             }
 
             if (onGround)
 			{
-				anim.SetFloat ("Speed",Mathf.Abs (rb.velocity.magnitude));
+				anim.SetFloat("Speed", Mathf.Abs(rb.velocity.magnitude));
 			}
 
 			if(h>0&&!facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
@@ -291,7 +314,7 @@ public class Player : MonoBehaviour
 
 	void ResetSpeed()
 	{
-		currentSpeed = maxSpeed;
+		currentSpeed = maxNormalSpeed;
 	}
 
 	void WeaponSpeed()

@@ -426,6 +426,7 @@ MonoBehaviour:
   minHeight: -6.5
   maxHeight: -1
   maxHealth: 12
+  maxSuper: 100
   playerName: Axel
   playerImage: {fileID: 21300434, guid: eb424f37766c38a48882d5a683909e74, type: 3}
   collisionSound: {fileID: 8300000, guid: ac47e7008e379564bbd4c75f44fa1db8, type: 3}
