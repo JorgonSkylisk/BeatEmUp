@@ -211,11 +211,11 @@ public class Player : MonoBehaviour
 		{
 			if(!isDead)
 			{
-				if(facingRight)
+				if(facingRight && Time.timeScale == 1.0f)
 				{
 					rb.AddForce (new Vector3(-1.5f,2.5f,0),ForceMode.Impulse);
 				}
-				else
+				else if(!facingRight && Time.timeScale == 1.0f)
 				{
 					rb.AddForce (new Vector3(1.5f,2.5f,0),ForceMode.Impulse);
 				}

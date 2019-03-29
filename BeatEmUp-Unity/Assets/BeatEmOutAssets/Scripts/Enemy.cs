@@ -115,7 +115,7 @@ public class Enemy : MonoBehaviour
 			anim.SetTrigger ("HighDamage");
 			highDamage = true;
 			Invoke("NotHighDamage",0.05f);
-			if(!isDead)
+			if(!isDead && Time.timeScale == 1.0f)
 			{
 				rb.AddRelativeForce(new Vector3(1.5f,0.7f,0),ForceMode.Impulse);
 			}
