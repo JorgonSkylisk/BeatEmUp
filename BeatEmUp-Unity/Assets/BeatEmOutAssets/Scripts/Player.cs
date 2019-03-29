@@ -40,11 +40,7 @@ public class Player : MonoBehaviour
     private float animStopSpeed = 50f;
     private float maxNormalSpeed = 6;
     private float SlowMultiplier;
-
-    //Movement Variables
-    private float xSpeed =2;                                //float to give you a x axis speed
-    private float ySpeed =2;                                //as above with y
-    private float zSpeed =2;                                //as above with z
+    private float normalJump = 500;
 
     void Start () 
 	{
@@ -92,6 +88,9 @@ public class Player : MonoBehaviour
 			Jump ();
 		}
 
+
+        /// TIME SLOW
+
         if (Input.GetKeyDown(KeyCode.K))
         {
             if (Time.timeScale == 1.0f && currentSuper != 0)
@@ -99,7 +98,6 @@ public class Player : MonoBehaviour
                 Time.timeScale = 0.2f;
                 anim.speed = animSlowSpeed;
                 maxSpeed = maxNormalSpeed * 5;
-                //xSpeed = xSpeed * 5;
                 jumpForce = jumpForce * 5;
                 currentSuper -= 10;
                 StartCoroutine(wait_slowTime());
@@ -110,8 +108,7 @@ public class Player : MonoBehaviour
                 Time.timeScale = 1.0f;
                 anim.speed = animNormalSpeed;
                 maxNormalSpeed = 6;
-                //xSpeed = 2;
-                jumpForce = 500;
+                jumpForce = normalJump;
                 
             }
                 // Adjust fixed delta time according to timescale
@@ -119,6 +116,9 @@ public class Player : MonoBehaviour
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
             UIManager.instance.UpdateSuper(currentSuper);
         }
+
+
+        /// TIME STOP
 
         if (Input.GetKeyDown(KeyCode.L))
         {
@@ -144,6 +144,9 @@ public class Player : MonoBehaviour
             Time.fixedDeltaTime = 0.02f * Time.timeScale;
             UIManager.instance.UpdateSuper(currentSuper);
         }
+
+
+
 
 
         if (!holdingWeapon) 
@@ -176,7 +179,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 1.0f;
         anim.speed = animNormalSpeed;
         maxSpeed = maxNormalSpeed;
-        jumpForce = 500;
+        jumpForce = normalJump;
     }
 
     IEnumerator wait_stopTime()
@@ -185,7 +188,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 1.0f;
         anim.speed = animNormalSpeed;
         maxSpeed = maxNormalSpeed;
-        jumpForce = 500;
+        jumpForce = normalJump;
     }
 
     float h;
@@ -231,27 +234,8 @@ public class Player : MonoBehaviour
                   z = CrossPlatformInputManager.GetAxisRaw ("Vertical");
               }
 
-             /*float speed = 3;
 
-              float dh = h * speed * Time.deltaTime;
-
-              Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-
-              gameObject.GetComponent<CharacterController>().Move(transform.TransformDirection(input * speed * Time.deltaTime));
-
-
-   */
-
-
-                                                         //... Free the speed from framerate's tiranny...
- /*           hMove *= Time.fixedUnscaledDeltaTime;                    //this shifts the movement's pace to real seconds
-            vMove *= Time.unscaledDeltaTime;                    //as above
-            zMove *= Time.unscaledDeltaTime;                    //as above
-
-        
-            //This line tells the game what to do with the lines above, that is to Move.
-            transform.Translate(hMove, 0.0f, zMove, Space.World);
-   */ 
+    
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2"))
 			{
 				rb.velocity = Vector3.zero;
@@ -264,7 +248,7 @@ public class Player : MonoBehaviour
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage") && !highDamage && onGround)
             {
                rb.velocity = new Vector3(h * maxSpeed, rb.velocity.y, z * maxSpeed);
-               rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+               //rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
             }
 
             if (onGround)
@@ -297,7 +281,7 @@ public class Player : MonoBehaviour
 
 	public void Flip()
 	{
-		if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("DefaultAttack"))
+		if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("JumpAttack"))
 		{
 			facingRight = !facingRight;
 
@@ -309,12 +293,24 @@ public class Player : MonoBehaviour
 
 	void ZeroSpeed()
 	{
-		currentSpeed = 0;
+		maxSpeed = 0;
 	}
 
 	void ResetSpeed()
 	{
-		currentSpeed = maxNormalSpeed;
+        if (Time.timeScale == 0.2f)
+        {
+            maxSpeed = maxNormalSpeed * 5;
+
+
+        }
+        else if (Time.timeScale == 0.02f)
+        {
+            maxSpeed = maxNormalSpeed * 50;
+
+
+        }else
+        maxSpeed = maxNormalSpeed;
 	}
 
 	void WeaponSpeed()
