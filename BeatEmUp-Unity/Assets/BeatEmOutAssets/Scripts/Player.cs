@@ -83,7 +83,13 @@ public class Player : MonoBehaviour
 		anim.SetBool ("Dead", isDead);
 		anim.SetBool ("Weapon",holdingWeapon);
 
-		if (Input.GetButtonDown("Jump"))
+
+        // Adjust fixed delta time according to timescale
+        // The fixed delta time will now be 0.02 frames per real-time second
+        Time.fixedDeltaTime = 0.02f * Time.timeScale;
+
+
+        if (Input.GetButtonDown("Jump"))
 		{
 			Jump ();
 		}
@@ -101,7 +107,6 @@ public class Player : MonoBehaviour
                 jumpForce = jumpForce * 5;
                 currentSuper -= 10;
                 StartCoroutine(wait_slowTime());
-
             }
             else
             {
@@ -111,9 +116,10 @@ public class Player : MonoBehaviour
                 jumpForce = normalJump;
                 
             }
-                // Adjust fixed delta time according to timescale
+            // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
-            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+
+            //Time.maximumDeltaTime = 0.01f;
             UIManager.instance.UpdateSuper(currentSuper);
         }
 
@@ -139,15 +145,10 @@ public class Player : MonoBehaviour
                 currentSpeed = maxSpeed;
 
             }
-                // Adjust fixed delta time according to timescale
-            // The fixed delta time will now be 0.02 frames per real-time second
-            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+
             UIManager.instance.UpdateSuper(currentSuper);
         }
-
-
-
-
+        
 
         if (!holdingWeapon) 
 		{
@@ -211,15 +212,15 @@ public class Player : MonoBehaviour
 		{
 			if(!isDead)
 			{
-				if(facingRight && Time.timeScale == 1.0f)
+				if(facingRight)
 				{
 					rb.AddForce (new Vector3(-1.5f,2.5f,0),ForceMode.Impulse);
 				}
-				else if(!facingRight && Time.timeScale == 1.0f)
+				else
 				{
 					rb.AddForce (new Vector3(1.5f,2.5f,0),ForceMode.Impulse);
 				}
-			}
+            }
 		}
 
 		if (!isDead) 
@@ -228,11 +229,11 @@ public class Player : MonoBehaviour
             //float z = Input.GetAxis ("Vertical");
             //float h = joystick.JoystickAxis.x;
             //float z = joystick.JoystickAxis.y;
-              if(!highDamage&&onGround&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
-              {
+            if(!highDamage&&onGround&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+            {
                   h = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
                   z = CrossPlatformInputManager.GetAxisRaw ("Vertical");
-              }
+            }
 
 
     
