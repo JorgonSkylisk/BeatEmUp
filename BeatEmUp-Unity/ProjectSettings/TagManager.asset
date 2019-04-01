@@ -8,6 +8,9 @@ TagManager:
   - Weapon
   - Boss
   - PlayerAttack
+  - Super Item
+  - Lives Item
+  - Speed Item
   layers:
   - Default
   - TransparentFX

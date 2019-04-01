@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
 
 	public int lives;
-	public int characterIndex;
+    public int characterIndex;
 	public static GameManager gameManager;
 
 	void Awake () 

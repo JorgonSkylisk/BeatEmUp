@@ -174,6 +174,15 @@ public class Player : MonoBehaviour
 		}
 	}
 
+    IEnumerator wait_speedUp()
+    {
+        yield return new WaitForSecondsRealtime(5);
+        Time.timeScale = 1.0f;
+        anim.speed = animNormalSpeed;
+        maxSpeed = maxNormalSpeed;
+        jumpForce = normalJump;
+    }
+
     IEnumerator wait_slowTime()
     {
         yield return new WaitForSecondsRealtime (5);
@@ -249,7 +258,6 @@ public class Player : MonoBehaviour
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage") && !highDamage && onGround)
             {
                rb.velocity = new Vector3(h * maxSpeed, rb.velocity.y, z * maxSpeed);
-               //rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
             }
 
             if (onGround)
@@ -395,7 +403,44 @@ public class Player : MonoBehaviour
 			//}
 		}
 
-		if(other.CompareTag("Weapon"))
+        if (other.CompareTag("Super Item"))
+        {
+            //if(Input.GetKeyDown(KeyCode.E))
+            //{
+            Destroy(other.gameObject);
+            anim.SetTrigger("Catching");
+            PlaySong(healthItem);
+            currentSuper = maxSuper;
+            UIManager.instance.UpdateSuper(currentSuper);
+            //}
+        }
+
+        if (other.CompareTag("Lives Item"))
+        {
+            //if(Input.GetKeyDown(KeyCode.E))
+            //{
+            Destroy(other.gameObject);
+            anim.SetTrigger("Catching");
+            PlaySong(healthItem);
+            FindObjectOfType<GameManager>().lives +=1;
+            UIManager.instance.UpdateLives();
+            //}
+        }
+
+        if (other.CompareTag("Speed Item"))
+        {
+            //if(Input.GetKeyDown(KeyCode.E))
+            //{
+            Destroy(other.gameObject);
+            anim.SetTrigger("Catching");
+            PlaySong(healthItem);
+            anim.speed = animNormalSpeed * 3f;
+            maxSpeed = maxSpeed * 2f;
+            StartCoroutine(wait_slowTime());
+            //}
+        }
+
+        if (other.CompareTag("Weapon"))
 		{
 			if(/*Input.GetKeyDown (KeyCode.E)&&*/!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage"))
 			{
