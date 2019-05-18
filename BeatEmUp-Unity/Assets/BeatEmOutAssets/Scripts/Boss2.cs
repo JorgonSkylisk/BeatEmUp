@@ -39,6 +39,6 @@ public class Boss2 : Enemy
 	}
 	void LoadScene()
 	{
-		SceneManager.LoadScene ("TittleScene");
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }
