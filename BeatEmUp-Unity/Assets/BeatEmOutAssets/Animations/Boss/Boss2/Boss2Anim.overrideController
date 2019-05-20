@@ -4,8 +4,7 @@
 AnimatorOverrideController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_Name: Boss2Anim
   m_Controller: {fileID: 9100000, guid: 0fc0db30db9fd3b4dae40ab4c6ab1d39, type: 2}
   m_Clips:
@@ -27,3 +26,5 @@ AnimatorOverrideController:
     m_OverrideClip: {fileID: 7400000, guid: 24d4123de031a034b94aa50378306585, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: d9d172cd8f031c840a6a78442e84a682, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 5f85ffbc6d97a3a4e8f96fdd0a45c52b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bd2383aed4a7c1242a55628672b7b86a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cfe8f56ec790d6d4f93aa9270b51509a, type: 2}

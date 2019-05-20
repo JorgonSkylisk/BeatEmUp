@@ -24,6 +24,6 @@ public class Boomerang : MonoBehaviour
 	IEnumerator MoveBoomerang()
 	{
 		yield return new WaitForSeconds (2f);
-		direction *= -1;
+		//direction *= -1;
 	}
 }

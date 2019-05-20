@@ -15,7 +15,7 @@ public class SelectMenu : MonoBehaviour
 
 	void Start () 
 	{
-		characterIndex = 1;
+		characterIndex = 2;
 		audioS = GetComponent<AudioSource> ();
 		defaultColor = axelImage.color; 
 	}
@@ -23,7 +23,7 @@ public class SelectMenu : MonoBehaviour
 
 	void Update ()
 	{
-		if(Input.GetKeyDown(KeyCode.A))
+		/*if(Input.GetKeyDown(KeyCode.A))
 		{
 			characterIndex = 1;
 			PlaySound();
@@ -32,20 +32,20 @@ public class SelectMenu : MonoBehaviour
 		{
 			characterIndex = 2;
 			PlaySound();
-		}
+		}*/
 
-		if (characterIndex == 1)
+		/*if (characterIndex == 1)
 		{
 			adamImage.color = Color.yellow;
 
 			axelImage.color = defaultColor;
 
 		}
-		else if(characterIndex == 2)
+		else*/ if(characterIndex == 2)
 		{
 			axelImage.color = Color.yellow;
 
-			adamImage.color = defaultColor;
+			//adamImage.color = defaultColor;
 
 		}
 
@@ -65,10 +65,10 @@ public class SelectMenu : MonoBehaviour
 	}
 
 
-	public void SelectAdam()
+	/*public void SelectAdam()
 	{
 		characterIndex = 1;
-	}
+	}*/
 
 	public void SelectAxel()
 	{

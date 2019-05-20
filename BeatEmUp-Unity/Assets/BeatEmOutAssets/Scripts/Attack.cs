@@ -26,7 +26,7 @@ public class Attack : MonoBehaviour
 	{
 		Enemy enemy = other.GetComponent<Enemy> ();
 		Player player = other.GetComponent<Player> ();
-		CarTookDamage car = other.GetComponent<CarTookDamage>();
+
 		if (enemy != null) 
 		{
 			if (this.name != "Weapon") 
@@ -55,11 +55,5 @@ public class Attack : MonoBehaviour
 			}
 		}
 
-		if (car != null) 
-		{
-			anim.SetBool ("Combo", true);
-			car.TookDamage(damage);
-			Instantiate(hitEffect,hitEffectPos.position,Quaternion.identity);
-		}
 	}	
 }

@@ -114,7 +114,8 @@ public class Enemy : MonoBehaviour
 		{
 			anim.SetTrigger ("HighDamage");
 			highDamage = true;
-			Invoke("NotHighDamage",0.05f);
+            damageCount = 0;
+            Invoke("NotHighDamage",0.05f);
 			if(!isDead && Time.timeScale == 1.0f)
 			{
 				rb.AddRelativeForce(new Vector3(1.5f,0.7f,0),ForceMode.Impulse);
@@ -224,17 +225,17 @@ public class Enemy : MonoBehaviour
 				damageCount += 4;
 			}
 
-			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack1")) // 对其X轴
+			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
 			{
 				transform.position = new Vector3(transform.position.x,transform.position.y,transform.position.z);
 			}
 
 			PlaySong (collisionSound);
 			UIManager.instance.UpdateEnemyUI(maxHealth,currentHealth,enemyName,enemyImage);
-			if(currentHealth <= 0 || target.GetComponent<Player>().holdingWeapon&&currentHealth<=0)
+			if(currentHealth <= 0 /*|| target.GetComponent<Player>().holdingWeapon&&currentHealth<=0*/)
 			{
 				isDead = true;
-				rb.AddRelativeForce(new Vector3(4.5f,3.5f,0),ForceMode.Impulse);//自身坐标的力
+				rb.AddRelativeForce(new Vector3(4.5f,3.5f,0),ForceMode.Impulse);
 				PlaySong (deathSound);
 			}
 		}

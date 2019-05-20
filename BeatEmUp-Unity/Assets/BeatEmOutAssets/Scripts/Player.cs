@@ -6,7 +6,6 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour 
 {
-	//public EasyJoystick joystick;
 
 	public float maxSpeed = 6;
 	public float jumpForce = 500;
@@ -35,6 +34,9 @@ public class Player : MonoBehaviour
 	public bool highDamage;
 	public bool canAttack = true;
     public static float unscaledDeltaTime = 1.0f;
+    public bool horizontalMovement = false;
+    public bool upMovement = false;
+    public bool downMovement = false;
     private float animNormalSpeed = 1f;
     private float animSlowSpeed = 5f;
     private float animStopSpeed = 50f;
@@ -52,26 +54,9 @@ public class Player : MonoBehaviour
         currentSuper = maxSuper;
 		audioS = GetComponent<AudioSource>();
         SlowMultiplier = (float)(Time.deltaTime * (1 + (1.0 - Time.timeScale)));
-        //joystick = GameObject.FindObjectOfType<EasyJoystick>();
-        //EasyButton.On_ButtonDown += HandleOn_ButtonDown;
     }
 	
-	//void OnEnable()
-	//{
-		//EasyButton.On_ButtonDown += HandleOn_ButtonDown;
-	//}
 
-	//void HandleOn_ButtonDown(string buttonName)
-	//{
-		//if (buttonName == "AttackButton") 
-		//{
-			//Attack();
-		//}
-		//else if(buttonName == "JumpButton")
-		//{
-		//	Jump ();
-		//}
-	//}
 
 	void Update () 
 	{
@@ -234,11 +219,7 @@ public class Player : MonoBehaviour
 
 		if (!isDead) 
 		{
-            //float h = Input.GetAxis ("Horizontal");
-            //float z = Input.GetAxis ("Vertical");
-            //float h = joystick.JoystickAxis.x;
-            //float z = joystick.JoystickAxis.y;
-            if(!highDamage&&onGround&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+            if(!highDamage&&onGround&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2") || !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
             {
                   h = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
                   z = CrossPlatformInputManager.GetAxisRaw ("Vertical");
@@ -255,7 +236,7 @@ public class Player : MonoBehaviour
 			{
 				z=0;
 			}
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage") && !highDamage && onGround)
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage"))
             {
                rb.velocity = new Vector3(h * maxSpeed, rb.velocity.y, z * maxSpeed);
             }
@@ -268,13 +249,22 @@ public class Player : MonoBehaviour
 			if(h>0&&!facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
 			{
 				Flip();
-			}
+            }
 			else if(h<0&&facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
 			{
 				Flip ();
-			}
+            }
 
-			if(jump)
+            if (z > 0 && !highDamage && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2") && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+            {
+                upMovement = true;
+            }
+            else if (z < 0 && !highDamage && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2") && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+            {
+                Down();
+            }
+
+            if (jump)
 			{
 				jump = false;
 				rb.AddForce (Vector3.up * jumpForce);
@@ -466,13 +456,20 @@ public class Player : MonoBehaviour
 		   !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2")&&
 		   !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3")&&
 		   !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1")&&
-		   !anim.GetCurrentAnimatorStateInfo(0).IsName ("HighDamage2")&&
-		   holdingWeapon == false)
+		   !anim.GetCurrentAnimatorStateInfo(0).IsName ("HighDamage2")&& 
+           !anim.GetCurrentAnimatorStateInfo(0).IsTag("HoldEnemy")&&
+
+           holdingWeapon == false)
 		{
 			jump = true;
 		}
 	}
 	
+    void Down()
+    {
+        anim.SetTrigger("Down");
+    }
+
 	void PlayAttackSound()
 	{
 		audioS.clip = jumpSound;
@@ -537,17 +534,6 @@ public class Player : MonoBehaviour
 	{
 		holdingWeapon = false;
 	}	
-
-	/*public void TimeScale()
-	{
-		Time.timeScale = 0.4f;
-		Time.fixedDeltaTime = 0.04f * Time.timeScale;
-	}
-
-	/*public void ResteTimeScale()
-	{
-		Time.timeScale = 1f;
-	}*/
 
 	public void SetCombo()
 	{

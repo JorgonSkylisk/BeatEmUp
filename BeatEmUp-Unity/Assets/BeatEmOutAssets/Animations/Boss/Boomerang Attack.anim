@@ -4,8 +4,7 @@
 AnimationClip:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_Name: Boomerang Attack
   serializedVersion: 6
   m_Legacy: 0
@@ -21,7 +20,7 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300028, guid: cf91f6f53b2330b4696cdb3734d685d3, type: 3}
-    - time: 0.083333336
+    - time: 0.16666667
       value: {fileID: 21300026, guid: cf91f6f53b2330b4696cdb3734d685d3, type: 3}
     - time: 0.33333334
       value: {fileID: 21300026, guid: cf91f6f53b2330b4696cdb3734d685d3, type: 3}
@@ -71,6 +70,7 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
   m_Events:
   - time: 0
     functionName: ZeroSpeed
