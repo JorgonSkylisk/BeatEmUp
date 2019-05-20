@@ -89,10 +89,6 @@ public class Enemy : MonoBehaviour
 			}
 		}
 
-		/*if (damageCount == 3)
-		{
-			Camera.main.gameObject.GetComponent<CameraFocusOn>().CameraFocus();
-		}*/
 
 		walkTimer += Time.deltaTime;
 
@@ -194,10 +190,7 @@ public class Enemy : MonoBehaviour
 			currentHealth -= damage;
 			anim.SetTrigger ("HitDamage");
 
-			//if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack1 0"))
-			//{
-			//	Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
-			//}
+
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
 			{
@@ -225,7 +218,36 @@ public class Enemy : MonoBehaviour
 				damageCount += 4;
 			}
 
-			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+            if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack1"))
+            {
+                //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+                rb.AddRelativeForce(new Vector3(0, 10, 0), ForceMode.Impulse);
+                damageCount += 4;
+            }
+
+            if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack2"))
+            {
+                //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+                rb.AddRelativeForce(new Vector3(-10, 5, 0), ForceMode.Impulse);
+                damageCount += 4;
+                if (facingRight)
+                {
+                    Left();
+                }
+                else if (!facingRight)
+                {
+                    Right();
+                }
+            }
+
+            if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack3"))
+            {
+                //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+                rb.AddRelativeForce(new Vector3(-7, 3, 0), ForceMode.Impulse);
+                damageCount += 4;
+            }
+
+            if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
 			{
 				transform.position = new Vector3(transform.position.x,transform.position.y,transform.position.z);
 			}

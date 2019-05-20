@@ -67,6 +67,10 @@ public class Player : MonoBehaviour
 		anim.SetBool ("OnGround", onGround);
 		anim.SetBool ("Dead", isDead);
 		anim.SetBool ("Weapon",holdingWeapon);
+        anim.SetBool("Down", downMovement);
+        anim.SetBool("Up", upMovement);
+        anim.SetBool("Move", horizontalMovement);
+
 
 
         // Adjust fixed delta time according to timescale
@@ -79,6 +83,32 @@ public class Player : MonoBehaviour
 			Jump ();
 		}
 
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            upMovement = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.W))
+        {
+            upMovement = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            downMovement = true;
+        }else if (Input.GetKeyUp(KeyCode.S))
+        {
+            downMovement = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            horizontalMovement = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            horizontalMovement = false;
+        }
 
         /// TIME SLOW
 
@@ -255,14 +285,6 @@ public class Player : MonoBehaviour
 				Flip ();
             }
 
-            if (z > 0 && !highDamage && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2") && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
-            {
-                upMovement = true;
-            }
-            else if (z < 0 && !highDamage && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2") && !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
-            {
-                Down();
-            }
 
             if (jump)
 			{
@@ -465,12 +487,8 @@ public class Player : MonoBehaviour
 		}
 	}
 	
-    void Down()
-    {
-        anim.SetTrigger("Down");
-    }
 
-	void PlayAttackSound()
+    void PlayAttackSound()
 	{
 		audioS.clip = jumpSound;
 		audioS.Play ();
