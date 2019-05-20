@@ -29,9 +29,5 @@ public class Heavy : Enemy
         currentSpeed = 3 * maxSpeed;
     }
 
-    void BossDefeated()
-    {
-        Invoke("LoadScene", 8f);
-    }
 
 }

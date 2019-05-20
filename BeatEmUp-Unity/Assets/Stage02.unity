@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1065,6 +1065,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114146644518019970, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: enemy.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150323436813608, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: enemy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114388842087253920, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: enemy.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4312428596398338, guid: e7cbc14e0c2d8584690335b3760397b7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1107,7 +1122,7 @@ Prefab:
         type: 2}
       propertyPath: enemy.Array.data[0]
       value: 
-      objectReference: {fileID: 1280147717188516, guid: e7dd6c110ea28554e899d41a210bc4d9,
+      objectReference: {fileID: 1456561768029178, guid: ef6e360eecb22af4b94173985d3ac4d1,
         type: 2}
     - target: {fileID: 114150323436813608, guid: e7cbc14e0c2d8584690335b3760397b7,
         type: 2}
@@ -1127,6 +1142,39 @@ Prefab:
       value: 
       objectReference: {fileID: 1353456045153452, guid: dc77901661941a54d8564ea146243dfb,
         type: 2}
+    - target: {fileID: 114146644518019970, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: enemy.Array.data[1]
+      value: 
+      objectReference: {fileID: 1456561768029178, guid: ef6e360eecb22af4b94173985d3ac4d1,
+        type: 2}
+    - target: {fileID: 114146644518019970, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: numberOfEnemies
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114388842087253920, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: enemy.Array.data[1]
+      value: 
+      objectReference: {fileID: 1280147717188516, guid: e7dd6c110ea28554e899d41a210bc4d9,
+        type: 2}
+    - target: {fileID: 114388842087253920, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: enemy.Array.data[2]
+      value: 
+      objectReference: {fileID: 1456561768029178, guid: ef6e360eecb22af4b94173985d3ac4d1,
+        type: 2}
+    - target: {fileID: 114388842087253920, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: numberOfEnemies
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114388842087253920, guid: e7cbc14e0c2d8584690335b3760397b7,
+        type: 2}
+      propertyPath: spawnTime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7cbc14e0c2d8584690335b3760397b7, type: 2}
   m_IsPrefabAsset: 0

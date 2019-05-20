@@ -364,9 +364,8 @@ public class Player : MonoBehaviour
 	{
 		if(!isDead)
 		{
-			if (!onGround) {
-				damageCount += 4;
-			} else {
+			if (!onGround)
+            {	
 				damageCount+=1;
 			}
 

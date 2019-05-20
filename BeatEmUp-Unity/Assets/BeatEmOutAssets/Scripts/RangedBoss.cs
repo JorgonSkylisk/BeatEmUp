@@ -9,7 +9,7 @@ public class RangedBoss : Enemy
 	public GameObject boomerang;
 	public float minBoomerangTime,maxBoomerangTime;
 
-	public Transform[] buzz = new Transform[1];
+	public Transform[] buzz = new Transform[3];
 	
 	public override void Start ()
 	{
@@ -25,7 +25,7 @@ public class RangedBoss : Enemy
 		if(!isDead&&!highDamage&&Mathf.Abs(targetDistance.x)>2f)
 		{
 			anim.SetTrigger("Boomerang");
-			for(int i = 0; i<=0; i++)
+			for(int i = 0; i<=2; i++)
 			{
 				tempBoomerang = Instantiate(boomerang,buzz[i].transform.position,buzz[i].transform.rotation);
 				if(facingRight)
@@ -46,7 +46,7 @@ public class RangedBoss : Enemy
 	void BossDefeated()
 	{
         MusicController.instance.PlaySong (MusicController.instance.levelClearSong);
-		UIManager.instance.UpdateDisplayMessage ("Clear");
+		UIManager.instance.UpdateDisplayMessage ("DESTROYED");
 		Invoke ("LoadScene",8f);
 	}
 

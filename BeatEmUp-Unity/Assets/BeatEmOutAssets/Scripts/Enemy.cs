@@ -222,14 +222,14 @@ public class Enemy : MonoBehaviour
             {
                 //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
                 rb.AddRelativeForce(new Vector3(0, 10, 0), ForceMode.Impulse);
-                damageCount += 4;
+                damageCount += 10;
             }
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack2"))
             {
                 //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
                 rb.AddRelativeForce(new Vector3(-10, 5, 0), ForceMode.Impulse);
-                damageCount += 4;
+                damageCount += 12;
                 if (facingRight)
                 {
                     Left();
@@ -243,7 +243,7 @@ public class Enemy : MonoBehaviour
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack3"))
             {
                 //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
-                rb.AddRelativeForce(new Vector3(-7, 3, 0), ForceMode.Impulse);
+                rb.AddRelativeForce(new Vector3(-0.5f, 1, 0), ForceMode.Impulse);
                 damageCount += 4;
             }
 

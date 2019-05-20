@@ -110,7 +110,7 @@ public class ButherBoss : Enemy
 	private void BossDefeated()
 	{
 		MusicController.instance.PlaySong (MusicController.instance.levelClearSong);
-		UIManager.instance.UpdateDisplayMessage ("Clear");
+		UIManager.instance.UpdateDisplayMessage ("DESTROYED");
 		Invoke ("LoadScene",8f);
 	}
 	

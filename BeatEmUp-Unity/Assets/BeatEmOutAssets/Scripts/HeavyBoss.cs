@@ -34,7 +34,7 @@ public class HeavyBoss : Enemy
 	void BossDefeated()
 	{
 		MusicController.instance.PlaySong (MusicController.instance.levelClearSong);
-		UIManager.instance.UpdateDisplayMessage ("Stage Clear");
+		UIManager.instance.UpdateDisplayMessage ("DESTROYED");
 		Invoke ("LoadScene",8f);
 	}
 	void LoadScene()
