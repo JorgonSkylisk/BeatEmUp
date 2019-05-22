@@ -221,15 +221,15 @@ public class Enemy : MonoBehaviour
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack1"))
             {
                 //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
-                rb.AddRelativeForce(new Vector3(0, 10, 0), ForceMode.Impulse);
-                damageCount += 10;
+                rb.AddRelativeForce(new Vector3(3, 10, 0), ForceMode.Impulse);
+                damageCount += 4;
             }
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack2"))
             {
                 //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
                 rb.AddRelativeForce(new Vector3(-10, 5, 0), ForceMode.Impulse);
-                damageCount += 12;
+                damageCount += 4;
                 if (facingRight)
                 {
                     Left();
