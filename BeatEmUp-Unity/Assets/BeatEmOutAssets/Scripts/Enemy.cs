@@ -76,7 +76,10 @@ public class Enemy : MonoBehaviour
 			{
 				Invoke("Left",0.5f);
 			}
-		}
+
+
+
+        }
 
 		if (damaged && !isDead) 
 		{
@@ -230,14 +233,14 @@ public class Enemy : MonoBehaviour
                 //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
                 rb.AddRelativeForce(new Vector3(-10, 5, 0), ForceMode.Impulse);
                 damageCount += 4;
-                if (facingRight)
+                /*if (facingRight)
                 {
                     Left();
                 }
                 else if (!facingRight)
                 {
                     Right();
-                }
+                }*/
             }
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack3"))

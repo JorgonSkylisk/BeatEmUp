@@ -29,10 +29,12 @@ public class Ranged : Enemy
                 if (facingRight)
                 {
                     tempBoomerang.GetComponent<Boomerang>().direction = 1;
+
                 }
                 else
                 {
                     tempBoomerang.GetComponent<Boomerang>().direction = -1;
+
                 }
             }
         }
