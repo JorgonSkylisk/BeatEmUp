@@ -427,9 +427,9 @@ MonoBehaviour:
   maxHeight: -1
   maxHealth: 12
   maxSuper: 100
-  playerName: Axel
-  playerImage: {fileID: 21300434, guid: eb424f37766c38a48882d5a683909e74, type: 3}
-  collisionSound: {fileID: 8300000, guid: ac47e7008e379564bbd4c75f44fa1db8, type: 3}
+  playerName: Rodrigo
+  playerImage: {fileID: 21300120, guid: 7f733c01a6cdf2b4eb57903cb1472428, type: 3}
+  collisionSound: {fileID: 8300000, guid: 1874bb24bf2a5a74ba51d7b95a44d3fd, type: 3}
   jumpSound: {fileID: 8300000, guid: 0a7353f5b7c81bf4f894c2f3f3d1d639, type: 3}
   healthItem: {fileID: 8300000, guid: 7992ac3bf8708ee4785bfc73c8f403d2, type: 3}
   deadSound: {fileID: 8300000, guid: 6bbe20784e7a3f14aabe8d7ee0808ef7, type: 3}

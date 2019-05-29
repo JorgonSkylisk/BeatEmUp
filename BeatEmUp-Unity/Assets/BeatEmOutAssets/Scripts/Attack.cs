@@ -29,10 +29,9 @@ public class Attack : MonoBehaviour
 
 		if (enemy != null) 
 		{
-			if (this.name != "Weapon") 
-			{
+
 				anim.SetBool ("Combo", true);
-			}
+
 		
 			enemy.TookDamage(damage);
 			Instantiate(hitEffect,hitEffectPos.position,Quaternion.identity);

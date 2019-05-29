@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
 	public string playerName;
 	public Sprite playerImage;
 	public AudioClip collisionSound,jumpSound,healthItem,deadSound;
-	public Weapon weapon;
 	public int damageCount;
 
 	private int currentHealth;
@@ -23,7 +22,7 @@ public class Player : MonoBehaviour
     private int currentSuper;
 	private Rigidbody rb;
 	private Animator anim;
-	private Transform groundCheck;
+	private Transform groundCheck; // the trigger that determines when the actor is on the ground
 	public bool onGround;
 	public bool isDead = false;
 	public bool facingRight = true;
@@ -165,28 +164,12 @@ public class Player : MonoBehaviour
         }
         
 
-        if (!holdingWeapon) 
-		{
+
 			if (Input.GetKeyDown (KeyCode.J)&&canAttack /*|| CrossPlatformInputManager.GetButtonDown ("Attack")*/ ) 
 			{
 				Attack ();
 			}
-		}
-		else if (holdingWeapon) 
-		{
-			if (Input.GetKey (KeyCode.J)/*|| CrossPlatformInputManager.GetButton("Attack")*/) 
-			{
-				if(weaponAttackTime>0.3f)
-				{
-					weaponAttackTime = 0;
-					Attack ();
-				}
-				else
-				{
-					weaponAttackTime += Time.deltaTime;
-				}
-			}
-		}
+
 	}
 
     IEnumerator wait_speedUp()
@@ -226,8 +209,7 @@ public class Player : MonoBehaviour
 			anim.SetTrigger("HighDamage");
 			damageCount = 0;
 			Invoke("NotHighDamage",0.05f);
-			SetHoldingWeaponToFalse();
-			FindObjectOfType<Weapon>().gameObject.GetComponent<SpriteRenderer>().sprite = null;
+
 		}
 
 
@@ -290,7 +272,6 @@ public class Player : MonoBehaviour
 			{
 				jump = false;
 				rb.AddForce (Vector3.up * jumpForce);
-				//PlaySong (jumpSound);
 			}
 			float minWidth = Camera.main.ScreenToWorldPoint(new Vector3(0,0,10)).x;
 			float maxWidth = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,0,10)).x;
@@ -378,8 +359,7 @@ public class Player : MonoBehaviour
 				damageCount = 0; 
 				isDead = true;
 				FindObjectOfType<GameManager>().lives -- ;
-				holdingWeapon = false;
-				FindObjectOfType<Weapon>().gameObject.GetComponent<SpriteRenderer>().sprite = null;
+
 
 				PlaySong(deadSound);
 				if(facingRight)
@@ -404,64 +384,49 @@ public class Player : MonoBehaviour
 	{
 		if(other.CompareTag("Health Item"))
 		{
-			//if(Input.GetKeyDown(KeyCode.E))
-			//{
+
 				Destroy (other.gameObject);
 				anim.SetTrigger ("Catching");
 				PlaySong(healthItem);
 				currentHealth = maxHealth;
 				UIManager.instance.UpdateHealth(currentHealth);
-			//}
+			
 		}
 
         if (other.CompareTag("Super Item"))
         {
-            //if(Input.GetKeyDown(KeyCode.E))
-            //{
+
             Destroy(other.gameObject);
             anim.SetTrigger("Catching");
             PlaySong(healthItem);
             currentSuper = maxSuper;
             UIManager.instance.UpdateSuper(currentSuper);
-            //}
+            
         }
 
         if (other.CompareTag("Lives Item"))
         {
-            //if(Input.GetKeyDown(KeyCode.E))
-            //{
+
             Destroy(other.gameObject);
             anim.SetTrigger("Catching");
             PlaySong(healthItem);
             FindObjectOfType<GameManager>().lives +=1;
             UIManager.instance.UpdateLives();
-            //}
+            
         }
 
         if (other.CompareTag("Speed Item"))
         {
-            //if(Input.GetKeyDown(KeyCode.E))
-            //{
+
             Destroy(other.gameObject);
             anim.SetTrigger("Catching");
             PlaySong(healthItem);
             anim.speed = animNormalSpeed * 3f;
             maxSpeed = maxSpeed * 2f;
             StartCoroutine(wait_slowTime());
-            //}
+            
         }
 
-        if (other.CompareTag("Weapon"))
-		{
-			if(/*Input.GetKeyDown (KeyCode.E)&&*/!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage"))
-			{
-				anim.SetTrigger("Catching");
-				holdingWeapon = true;
-				WeaponItem weaponItem = other.GetComponent<PickableWeapon>().weapon;
-				weapon.ActivateWeapon(weaponItem.sprite,weaponItem.color,weaponItem.durability,weaponItem.damage);
-				Destroy (other.gameObject);
-			}
-		}
 	}
 
 	void Attack()
@@ -506,12 +471,12 @@ public class Player : MonoBehaviour
 		if (facingRight)
 		{
 			ray.direction = transform.right;
-			//Debug.DrawRay(transform.position+ transform.up * 1f,transform.right*rayDis,Color.blue);
+
 		} 
 		else if(!facingRight)
 		{
 			ray.direction = -transform.right;
-			//Debug.DrawRay(transform.position+ transform.up * 1f,-transform.right*rayDis,Color.blue);
+
 		}
 
 
@@ -524,13 +489,13 @@ public class Player : MonoBehaviour
 			!holdingWeapon
 		    ) 
 		{
-			//Debug.Log ("Hold");
+
 			Debug.DrawRay(transform.position+ transform.up * 1f,ray.direction*rayDis,Color.blue);
 			Enemy holdEnemy = hit.collider.gameObject.GetComponent<Enemy> ();
 			if(holdEnemy.tag != "Boss")
 			{
 				if (holdEnemy != null) {
-					//Debug.Log (holdEnemy.gameObject.name);
+
 					holdEnemy.beHold = true;
 					anim.SetBool ("HoldEnemy",true);
 				}

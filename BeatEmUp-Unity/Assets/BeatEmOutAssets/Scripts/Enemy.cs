@@ -22,20 +22,20 @@ public class Enemy : MonoBehaviour
 
 	public bool facingRight = false;
 	protected Transform target;              //player.
-	protected Transform targetHitBox;
-	public Transform newTarget;
+	protected Transform targetHitBox;       // the players attack hitbox
+	public Transform newTarget;         // location of enemy's target
 	protected bool isDead = false;
 	private float zForce;
-	private float walkTimer;
-	protected bool damaged = false;
-	private float damageTimer;
+	private float walkTimer;            // timer that determines the ememy's delay between movement
+	protected bool damaged = false;     // has the actor has been hit
+	private float damageTimer;          // time stunned after being hit
 	private float nextAttack;
 	private CapsuleCollider collider;
 	private AudioSource audioS;
 
-	public int damageCount;
-	public bool highDamage;
-	public bool beHold = false;
+	public int damageCount;             // counter that track how many times the character is hit before being knocked down
+	public bool highDamage;             // state where the character is knocked down due to taking a certain amount of damage
+	public bool beHold = false;         // the state when the character is grappled by the player
 
 	public virtual void Start () 
 	{
@@ -61,10 +61,10 @@ public class Enemy : MonoBehaviour
 
 		if (beHold) 
 		{
-			Invoke ("NotBeHold",0.5f);
+			Invoke ("NotBeHold",0.5f); // after a half second the character checks to see if the grapple has ended after a half second
 		}
 
-		if(!isDead)
+		if(!isDead)         // tranform the sprite depending on the direction they are facing 
 		{
 			facingRight = (target.position.x < transform.position.x) ? false : true;
 			
@@ -76,12 +76,11 @@ public class Enemy : MonoBehaviour
 			{
 				Invoke("Left",0.5f);
 			}
-
-
+        
 
         }
 
-		if (damaged && !isDead) 
+		if (damaged && !isDead)         // if the character is hit and isn't dead they are stunned for a short time
 		{
 			damageTimer += Time.deltaTime;
 			if(damageTimer>= damageTime || target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Damage"))
@@ -95,7 +94,7 @@ public class Enemy : MonoBehaviour
 
 		walkTimer += Time.deltaTime;
 
-		if(transform.position.y < -10)
+		if(transform.position.y < -10) // if they somehow fall out of world they get killed
 		{
 			this.gameObject.SetActive(false);
 			TookDamage (50);
@@ -109,7 +108,7 @@ public class Enemy : MonoBehaviour
 	protected float hForce;
 	public virtual void FixedUpdate()
 	{
-		if(damageCount >= 4)
+		if(damageCount >= 4) // after being hit by a powerful attack the character is knocked down to the ground 
 		{
 			anim.SetTrigger ("HighDamage");
 			highDamage = true;
@@ -135,7 +134,6 @@ public class Enemy : MonoBehaviour
 			    Physics.Raycast(transform.position,-transform.forward,out hit,GetComponent<CapsuleCollider>().radius+3f,enemyMask))
 			{
 				zForce = -2f*(hit.point - transform.position).normalized.z;
-				//Debug.Log ("SSS");
 			}
 			else
 			{
@@ -197,40 +195,40 @@ public class Enemy : MonoBehaviour
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
 			{
-				//Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
 				rb.AddForce (new Vector3(0,7,0),ForceMode.Impulse);
 			}
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack3")&&!highDamage)
 			{
-				//Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
 				damageCount +=4;
 			}
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Voadera"))
 			{
-				//Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
 				//rb.AddRelativeForce (new Vector3(-7,3,0),ForceMode.Impulse);
 				damageCount += 4;
 			}
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack"))
 			{
-				//Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
 				rb.AddRelativeForce (new Vector3(-7,3,0),ForceMode.Impulse);
 				damageCount += 4;
 			}
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack1"))
             {
-                //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
                 rb.AddRelativeForce(new Vector3(3, 10, 0), ForceMode.Impulse);
                 damageCount += 4;
             }
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack2"))
             {
-                //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
                 rb.AddRelativeForce(new Vector3(-10, 5, 0), ForceMode.Impulse);
                 damageCount += 4;
                 /*if (facingRight)
@@ -245,7 +243,7 @@ public class Enemy : MonoBehaviour
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack3"))
             {
-                //Camera.main.gameObject.GetComponent<ScreenShake>().isshakeCamera = true;
+
                 rb.AddRelativeForce(new Vector3(-0.5f, 1, 0), ForceMode.Impulse);
                 damageCount += 4;
             }
@@ -257,7 +255,7 @@ public class Enemy : MonoBehaviour
 
 			PlaySong (collisionSound);
 			UIManager.instance.UpdateEnemyUI(maxHealth,currentHealth,enemyName,enemyImage);
-			if(currentHealth <= 0 /*|| target.GetComponent<Player>().holdingWeapon&&currentHealth<=0*/)
+			if(currentHealth <= 0)
 			{
 				isDead = true;
 				rb.AddRelativeForce(new Vector3(4.5f,3.5f,0),ForceMode.Impulse);

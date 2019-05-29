@@ -263,8 +263,8 @@ MonoBehaviour:
   damageTime: 2
   maxHealth: 15
   attackRate: 1
-  enemyName: Heavy
-  enemyImage: {fileID: 21300012, guid: 72ef043d3ea13694faae0efbee062c10, type: 3}
+  enemyName: Heavy Robo
+  enemyImage: {fileID: 21300050, guid: 0e331a4ca6e4ecd48b912e0d9cfb9157, type: 3}
   collisionSound: {fileID: 8300000, guid: ac47e7008e379564bbd4c75f44fa1db8, type: 3}
   deathSound: {fileID: 8300000, guid: 702a602812d6ad648aec217ce7eb7443, type: 3}
   facingRight: 0

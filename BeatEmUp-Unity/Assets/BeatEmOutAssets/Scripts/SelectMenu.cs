@@ -17,37 +17,13 @@ public class SelectMenu : MonoBehaviour
 	{
 		characterIndex = 2;
 		audioS = GetComponent<AudioSource> ();
-		defaultColor = axelImage.color; 
+
 	}
 	
 
 	void Update ()
 	{
-		/*if(Input.GetKeyDown(KeyCode.A))
-		{
-			characterIndex = 1;
-			PlaySound();
-		}
-		else if(Input.GetKeyDown(KeyCode.D))
-		{
-			characterIndex = 2;
-			PlaySound();
-		}*/
 
-		/*if (characterIndex == 1)
-		{
-			adamImage.color = Color.yellow;
-
-			axelImage.color = defaultColor;
-
-		}
-		else*/ if(characterIndex == 2)
-		{
-			axelImage.color = Color.yellow;
-
-			//adamImage.color = defaultColor;
-
-		}
 
 		if(Input.GetKeyDown(KeyCode.Return))
 		{
@@ -65,20 +41,10 @@ public class SelectMenu : MonoBehaviour
 	}
 
 
-	/*public void SelectAdam()
-	{
-		characterIndex = 1;
-	}*/
 
-	public void SelectAxel()
+	public void Confirm() // Start the game
 	{
-		characterIndex = 2;
-	}
-
-	public void Confirm()
-	{
-		FindObjectOfType<GameManager>().characterIndex = characterIndex;
-		//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		FindObjectOfType<GameManager>().characterIndex = characterIndex;;
 		LevelLoader.levelLoader.LoadLevel (SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }
