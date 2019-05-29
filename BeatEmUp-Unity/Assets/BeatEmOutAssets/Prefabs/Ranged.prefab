@@ -420,7 +420,7 @@ MonoBehaviour:
   beHold: 0
   enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   boomerang: {fileID: 1074613886646264, guid: 66d526684de370f49b743d020dfabc09, type: 2}
   minBoomerangTime: 1
   maxBoomerangTime: 4

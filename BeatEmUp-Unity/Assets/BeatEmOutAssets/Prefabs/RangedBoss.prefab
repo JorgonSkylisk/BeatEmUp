@@ -437,7 +437,7 @@ MonoBehaviour:
   maxHealth: 20
   attackRate: 1
   enemyName: BoomMan
-  enemyImage: {fileID: 21300000, guid: 1342ea7a4e1aee844af958324a3c8f83, type: 3}
+  enemyImage: {fileID: 21300058, guid: 0e331a4ca6e4ecd48b912e0d9cfb9157, type: 3}
   collisionSound: {fileID: 8300000, guid: ac47e7008e379564bbd4c75f44fa1db8, type: 3}
   deathSound: {fileID: 8300000, guid: 702a602812d6ad648aec217ce7eb7443, type: 3}
   facingRight: 0
@@ -504,7 +504,7 @@ SpriteRenderer:
   m_SortingLayerID: 1801927713
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: cf91f6f53b2330b4696cdb3734d685d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e331a4ca6e4ecd48b912e0d9cfb9157, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

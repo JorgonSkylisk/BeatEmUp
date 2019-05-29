@@ -12,7 +12,7 @@ public class Boomerang : MonoBehaviour
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody> ();
-		StartCoroutine (MoveBoomerang());//不是Invoke 因为要用轶代重复执行
+
 	}
 	
 
@@ -21,9 +21,4 @@ public class Boomerang : MonoBehaviour
 		rb.velocity = new Vector3 (6 * direction, 0, 0 * direction);
 	}
 
-	IEnumerator MoveBoomerang()
-	{
-		yield return new WaitForSeconds (2f);
-		//direction *= -1;
-	}
 }
