@@ -195,56 +195,53 @@ public class Enemy : MonoBehaviour
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
 			{
-
 				rb.AddForce (new Vector3(0,7,0),ForceMode.Impulse);
 			}
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack3")&&!highDamage)
 			{
-
 				damageCount +=4;
 			}
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Voadera"))
 			{
 
-				//rb.AddRelativeForce (new Vector3(-7,3,0),ForceMode.Impulse);
 				damageCount += 4;
 			}
 
 			if(target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack"))
 			{
 
-				rb.AddRelativeForce (new Vector3(-7,3,0),ForceMode.Impulse);
+				rb.AddRelativeForce (new Vector3(-7,3f,0),ForceMode.Impulse);
 				damageCount += 4;
 			}
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack1"))
             {
 
-                rb.AddRelativeForce(new Vector3(3, 10, 0), ForceMode.Impulse);
+                rb.AddRelativeForce(new Vector3(3, 10f, 0), ForceMode.Impulse);
                 damageCount += 4;
             }
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack2"))
             {
 
-                rb.AddRelativeForce(new Vector3(-10, 5, 0), ForceMode.Impulse);
+                rb.AddRelativeForce(new Vector3(-10f, 5f, 0), ForceMode.Impulse);
                 damageCount += 4;
-                /*if (facingRight)
+                if (facingRight)
                 {
-                    Left();
+                    Invoke("Left", 0.5f);
                 }
                 else if (!facingRight)
                 {
-                    Right();
-                }*/
+                    Invoke("Right", 0.5f);
+                }
             }
 
             if (target.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("HoldAttack3"))
             {
 
-                rb.AddRelativeForce(new Vector3(-0.5f, 1, 0), ForceMode.Impulse);
+                rb.AddRelativeForce(new Vector3(-1f, 2f, 0), ForceMode.Impulse);
                 damageCount += 4;
             }
 

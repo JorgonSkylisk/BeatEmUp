@@ -9,9 +9,9 @@ public class RangedBoss : Enemy
 	public GameObject boomerang;
 	public float minBoomerangTime,maxBoomerangTime;
 
-	public Transform[] buzz = new Transform[3];
-	
-	public override void Start ()
+	public Transform[] buzz = new Transform[3];  // projectile spawn point
+
+    public override void Start ()
 	{
 		base.Start ();
 		Invoke ("ThrowBoomerang",Random.Range (minBoomerangTime,maxBoomerangTime));
@@ -22,13 +22,13 @@ public class RangedBoss : Enemy
 
 	void ThrowBoomerang()
 	{
-		if(!isDead&&!highDamage&&Mathf.Abs(targetDistance.x)>2f)
-		{
-			anim.SetTrigger("Boomerang");
+		if(!isDead&&!highDamage&&Mathf.Abs(targetDistance.x)>2f) // if the target is far enough away throw projectile
+        {
+            anim.SetTrigger("Boomerang");
 			for(int i = 0; i<=2; i++)
 			{
-				tempBoomerang = Instantiate(boomerang,buzz[i].transform.position,buzz[i].transform.rotation);
-				if(facingRight)
+				tempBoomerang = Instantiate(boomerang,buzz[i].transform.position,buzz[i].transform.rotation); //create intance of boomerang at a spawn point "Buzz"
+                if (facingRight)
 				{
 					tempBoomerang.GetComponent<Boomerang>().direction = 1;
 				}
@@ -38,7 +38,7 @@ public class RangedBoss : Enemy
 				}
 			}
 		}
-		Invoke ("ThrowBoomerang",Random.Range(minBoomerangTime,maxBoomerangTime));
+		Invoke ("ThrowBoomerang",Random.Range(minBoomerangTime,maxBoomerangTime)); // perform attack at random time between two set values
 	}
 
 

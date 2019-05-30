@@ -16,7 +16,7 @@ public class EnemyBegin : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Vector3.Distance(target.position,transform.position)<=dis)
+		if(Vector3.Distance(target.position,transform.position)<=dis) // once player is in range activate enemy
 		{
 			this.gameObject.SetActive(false);
 			enemy.SetActive(true);

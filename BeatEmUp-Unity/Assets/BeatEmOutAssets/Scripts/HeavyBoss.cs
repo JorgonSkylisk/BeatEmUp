@@ -18,17 +18,17 @@ public class HeavyBoss : Enemy
 
 	void SpecialAttack()
 	{
-		if(!isDead&&!highDamage&&Mathf.Abs(targetDistance.x)>1f)
-		{
+		if(!isDead&&!highDamage&&Mathf.Abs(targetDistance.x)>1f)// if the target is far enough away perform charge attack
+        {
 			anim.SetTrigger("Boomerang");
 			//Debug.Log("SpecialAttack");
 		}
-		Invoke ("SpecialAttack",Random.Range(minSpecialAttackTime,maxSpecialAttackTime));
-	}
+		Invoke ("SpecialAttack",Random.Range(minSpecialAttackTime,maxSpecialAttackTime)); // perform attack at random time between two set values
+    }
 
 	void SpecialSpeed()
 	{
-		currentSpeed = 3 * maxSpeed;
+		currentSpeed = 7 * maxSpeed;
 	}
 
 	void BossDefeated()

@@ -21,7 +21,6 @@ public class CameraFocusOn : MonoBehaviour
 	public void CameraFocus()
 	{
 		Camera.main.orthographicSize = 4;
-		//transform.position = new Vector3 (FindObjectOfType<Player>().transform.position.x,transform.position.y,transform.position.z);
 	}
 
 	private void CameraNormal()

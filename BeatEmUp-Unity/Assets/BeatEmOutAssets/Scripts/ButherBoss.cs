@@ -71,10 +71,8 @@ public class ButherBoss : Enemy
 	{
 		if(!damaged&&!highDamage&&!isDead)
 		{
-			//Debug.Log("Fuck You");
 			anim.SetTrigger("Boomerang");
 		}
-		//Invoke ("SpecialAttack",Random.Range (minBoomerangTime,maxBoomerangTime));
 	}
 
 	void JumpAttack()
@@ -83,7 +81,6 @@ public class ButherBoss : Enemy
 		{
 			jumping = true;
 		}
-		//Invoke ("JumpAttack",Random.Range (minBoomerangTime,maxBoomerangTime));
 	}
 
 	void FalseJump()

@@ -10,6 +10,6 @@ public class PlayerSpawner : MonoBehaviour
 	void Awake () 
 	{
 		int index = FindObjectOfType<GameManager> ().characterIndex - 1;
-		Instantiate (player [index], transform.position, transform.rotation);
+		Instantiate (player [index], transform.position, transform.rotation); // new player spawned at position
 	}
 }

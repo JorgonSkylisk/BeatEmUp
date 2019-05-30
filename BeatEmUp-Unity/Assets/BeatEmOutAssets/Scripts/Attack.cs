@@ -30,7 +30,7 @@ public class Attack : MonoBehaviour
 		if (enemy != null) 
 		{
 
-				anim.SetBool ("Combo", true);
+				anim.SetBool ("Combo", true); // player can continue the attack string so long as the enemy is in the collider
 
 		
 			enemy.TookDamage(damage);
@@ -40,7 +40,7 @@ public class Attack : MonoBehaviour
 		if (player != null) 
 		{
 			player.TookDamage(damage);
-			if (transform.position.x - player.transform.position.x > 0) 
+			if (transform.position.x - player.transform.position.x > 0) // if the player is facing away from the attack flip them around to face the attack
 			{
 				if (!player.facingRight) {
 					player.Flip ();

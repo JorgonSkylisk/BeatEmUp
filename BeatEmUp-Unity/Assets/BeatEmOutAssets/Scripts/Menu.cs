@@ -18,7 +18,6 @@ public class Menu : MonoBehaviour {
 
 	void LoadScene()
 	{
-		//SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
 		LevelLoader.levelLoader.LoadLevel (SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }

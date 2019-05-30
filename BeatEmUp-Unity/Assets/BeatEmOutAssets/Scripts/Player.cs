@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
 	public float maxSpeed = 6;
 	public float jumpForce = 500;
-	public float minHeight, maxHeight;
+	public float minHeight, maxHeight; // min/max values for moving along the z axis
 	public int maxHealth = 10;
     public int maxSuper = 100;
 	public string playerName;
@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
 	public int damageCount;
 
 	private int currentHealth;
-	private float currentSpeed;
     private int currentSuper;
 	private Rigidbody rb;
 	private Animator anim;
@@ -28,19 +27,19 @@ public class Player : MonoBehaviour
 	public bool facingRight = true;
 	private bool jump = false; 
 	private AudioSource audioS;
-	public bool holdingWeapon = false;
-	private float weaponAttackTime;
 	public bool highDamage;
 	public bool canAttack = true;
-    public static float unscaledDeltaTime = 1.0f;
+
+    // input booleans for the grab system
     public bool horizontalMovement = false;
     public bool upMovement = false;
     public bool downMovement = false;
+
+    // Normal variables during normal timescale
     private float animNormalSpeed = 1f;
     private float animSlowSpeed = 5f;
     private float animStopSpeed = 50f;
     private float maxNormalSpeed = 6;
-    private float SlowMultiplier;
     private float normalJump = 500;
 
     void Start () 
@@ -48,11 +47,9 @@ public class Player : MonoBehaviour
 		rb = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
 		groundCheck = gameObject.transform.Find ("GroundCheck");
-		currentSpeed = maxSpeed;
 		currentHealth = maxHealth;
         currentSuper = maxSuper;
 		audioS = GetComponent<AudioSource>();
-        SlowMultiplier = (float)(Time.deltaTime * (1 + (1.0 - Time.timeScale)));
     }
 	
 
@@ -65,7 +62,6 @@ public class Player : MonoBehaviour
 
 		anim.SetBool ("OnGround", onGround);
 		anim.SetBool ("Dead", isDead);
-		anim.SetBool ("Weapon",holdingWeapon);
         anim.SetBool("Down", downMovement);
         anim.SetBool("Up", upMovement);
         anim.SetBool("Move", horizontalMovement);
@@ -133,7 +129,6 @@ public class Player : MonoBehaviour
             // Adjust fixed delta time according to timescale
             // The fixed delta time will now be 0.02 frames per real-time second
 
-            //Time.maximumDeltaTime = 0.01f;
             UIManager.instance.UpdateSuper(currentSuper);
         }
 
@@ -156,7 +151,8 @@ public class Player : MonoBehaviour
             {
                 Time.timeScale = 1.0f;
                 anim.speed = animNormalSpeed;
-                currentSpeed = maxSpeed;
+                maxNormalSpeed = 6;
+                jumpForce = normalJump;
 
             }
 
@@ -165,12 +161,15 @@ public class Player : MonoBehaviour
         
 
 
-			if (Input.GetKeyDown (KeyCode.J)&&canAttack /*|| CrossPlatformInputManager.GetButtonDown ("Attack")*/ ) 
-			{
-				Attack ();
-			}
+		if (Input.GetKeyDown (KeyCode.J)&&canAttack /*|| CrossPlatformInputManager.GetButtonDown ("Attack")*/ ) 
+		{
+			Attack ();
+		}
 
 	}
+
+
+    // Coroutines for resetting player variables after time manipulation powers
 
     IEnumerator wait_speedUp()
     {
@@ -199,8 +198,11 @@ public class Player : MonoBehaviour
         jumpForce = normalJump;
     }
 
-    float h;
-	float z;
+
+
+
+    float h; // horizontal movement 
+	float z; // z plane vertical movement
 	private void FixedUpdate()
 	{
 		if (damageCount >= 3) 
@@ -233,7 +235,7 @@ public class Player : MonoBehaviour
 		{
             if(!highDamage&&onGround&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2") || !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
             {
-                  h = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
+                  h = CrossPlatformInputManager.GetAxisRaw ("Horizontal"); 
                   z = CrossPlatformInputManager.GetAxisRaw ("Vertical");
             }
 
@@ -241,28 +243,30 @@ public class Player : MonoBehaviour
     
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2"))
 			{
-				rb.velocity = Vector3.zero;
+				rb.velocity = Vector3.zero; // stop player's velocity after they hit the ground during high damage state
 			}
 
 			if(!onGround)
 			{
-				z=0;
+				z=0; // player can't move on the Z axis while in the air
 			}
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Damage"))
             {
-               rb.velocity = new Vector3(h * maxSpeed, rb.velocity.y, z * maxSpeed);
+               rb.velocity = new Vector3(h * maxSpeed, rb.velocity.y, z * maxSpeed); // input float * speed = current velocity
             }
 
             if (onGround)
 			{
-				anim.SetFloat("Speed", Mathf.Abs(rb.velocity.magnitude));
+				anim.SetFloat("Speed", Mathf.Abs(rb.velocity.magnitude)); // uses player's velocity as an animation paramter
 			}
 
-			if(h>0&&!facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+
+            // If the player starts moving in the opposite direction to where they are facing and are not taking damage flip the sprite
+			if(h>0&&!facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1")&&onGround)
 			{
 				Flip();
             }
-			else if(h<0&&facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1"))
+			else if(h<0&&facingRight&&!highDamage&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&!anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1")&&onGround)
 			{
 				Flip ();
             }
@@ -315,10 +319,6 @@ public class Player : MonoBehaviour
         maxSpeed = maxNormalSpeed;
 	}
 
-	void WeaponSpeed()
-	{
-		currentSpeed = 0.5f * maxSpeed;
-	}
 
 	void PlayerRespawn()
 	{
@@ -443,9 +443,7 @@ public class Player : MonoBehaviour
 		   !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3")&&
 		   !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1")&&
 		   !anim.GetCurrentAnimatorStateInfo(0).IsName ("HighDamage2")&& 
-           !anim.GetCurrentAnimatorStateInfo(0).IsTag("HoldEnemy")&&
-
-           holdingWeapon == false)
+           !anim.GetCurrentAnimatorStateInfo(0).IsTag("HoldEnemy"))
 		{
 			jump = true;
 		}
@@ -485,8 +483,7 @@ public class Player : MonoBehaviour
 		    !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage1")&&
 		    !anim.GetCurrentAnimatorStateInfo(0).IsName("HighDamage2")&&
 		    !anim.GetCurrentAnimatorStateInfo(0).IsName("Jump")&&
-		    !anim.GetCurrentAnimatorStateInfo(0).IsName("Voadera")&&
-			!holdingWeapon
+		    !anim.GetCurrentAnimatorStateInfo(0).IsName("Voadera")
 		    ) 
 		{
 
@@ -512,10 +509,6 @@ public class Player : MonoBehaviour
 		SceneManager.LoadScene (0);
 	}
 
-	public void SetHoldingWeaponToFalse()
-	{
-		holdingWeapon = false;
-	}	
 
 	public void SetCombo()
 	{

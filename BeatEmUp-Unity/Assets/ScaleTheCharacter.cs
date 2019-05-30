@@ -50,6 +50,6 @@ public class ScaleTheCharacter : MonoBehaviour
 				Mathf.Clamp(scaleY /  (distanceToCam/10),scaleY-0.5f,scaleY+1.5f),
 				transform.localScale.z);
 		}
-		//Debug.Log(distanceToCam/13);
+
 	}
 }

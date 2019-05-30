@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SelectMenu : MonoBehaviour 
 {
-	public Image adamImage, axelImage;
-	public Animator adamAnim, axelAnim;
 
 	private Color defaultColor;
 	private int characterIndex;
