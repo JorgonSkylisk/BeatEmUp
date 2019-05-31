@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 114037488771979306}
   - component: {fileID: 82016773462935448}
   - component: {fileID: 114869933688450662}
-  - component: {fileID: 114257279704969244}
   m_Layer: 11
   m_Name: Ranged
   m_TagString: Untagged
@@ -445,23 +444,6 @@ MonoBehaviour:
   hitEffect: {fileID: 0}
   hitEffectPos: {fileID: 0}
   anim: {fileID: 0}
---- !u!114 &114257279704969244
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1456561768029178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552baaaa8b27fdb458d47db489b18dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForceMaterial: {fileID: 2100000, guid: 55c08ef9704fb31418bb510dc7ed04c1, type: 2}
-  ActiveChange: 1
-  _Alpha: 1
-  Seed: 1
-  Destroyed: 0
-  ShaderChange: 0
 --- !u!114 &114869933688450662
 MonoBehaviour:
   m_ObjectHideFlags: 1

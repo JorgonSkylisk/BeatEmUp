@@ -259,7 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 1
   minHeight: -6
-  maxHeight: -1
+  maxHeight: -2
   damageTime: 1
   maxHealth: 16
   attackRate: 1
