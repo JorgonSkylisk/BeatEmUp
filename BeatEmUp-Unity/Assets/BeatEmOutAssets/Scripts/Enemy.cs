@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-	public float maxSpeed;
+    [SerializeField]
+	protected float maxSpeed;
+
 	public float minHeight,maxHeight;
 	public float damageTime = 0.7f;
 	public int maxHealth;
